@@ -38,7 +38,7 @@ const Header = () => {
 
   return (
     <div id={styles.fontfamilyheader} className="h-full">
-      <header className="text-gray-600 body-font lg:hidden shadow-2xl">
+      <header className="text-gray-600 body-font lg:hidden">
         <div className="container mx-auto flex p-5 flex-row items-center justify-between">
           <a className="flex title-font font-medium items-center text-gray-900 md:mb-0">
             <span className="text-3xl">AFFIRM</span>
@@ -46,7 +46,7 @@ const Header = () => {
           <div>
             <button
               onClick={() => setSideBar(!sidebar)}
-              className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base md:mt-0"
+              className="inline-flex items-center bg-transparent rounded text-base md:mt-0"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -70,8 +70,8 @@ const Header = () => {
         </div>
       </header>
 
-      <header className="text-gray-600 body-font lg:grid hidden z-50 shadow-2xl">
-        <div className=" container mx-auto grid grid-cols-3 items-center">
+      <header className="text-gray-600 body-font lg:grid hidden z-50 ">
+        <div className=" container mx-auto grid grid-cols-3 items-center px-12">
           <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 px-8">
             <span className="pr-8 text-3xl">AFFIRM</span>
           </a>
@@ -82,7 +82,7 @@ const Header = () => {
                 onMouseOver={() => setShop(!shop)}
                 onMouseOut={() => setShop(!shop)}
                 id={styles.underline}
-                className="mr-5 bg-blue-400 p-6 hover:text-gray-900"
+                className=" bg-transparent p-6 hover:text-gray-900"
               >
                 Shop
               </a>
@@ -91,7 +91,7 @@ const Header = () => {
                 onMouseOver={() => setWaysToPay(!waystopay)}
                 onMouseOut={() => setWaysToPay(!waystopay)}
                 id={styles.underline}
-                className="mr-5 bg-blue-300 p-6 hover:text-gray-900"
+                className=" bg-transparent p-6 hover:text-gray-900"
               >
                 Ways to pay
               </a>
@@ -100,7 +100,7 @@ const Header = () => {
                 onMouseOver={() => setEarn(!earn)}
                 onMouseOut={() => setEarn(!earn)}
                 id={styles.underline}
-                className="mr-5 bg-blue-200 p-6 hover:text-gray-900"
+                className=" bg-transparent p-6 hover:text-gray-900"
               >
                 Earn
               </a>
@@ -109,7 +109,7 @@ const Header = () => {
                 onMouseOver={() => setBusiness(!business)}
                 onMouseOut={() => setBusiness(!business)}
                 id={styles.underline}
-                className="mr-5 bg-blue-500 p-6 hover:text-gray-900"
+                className="bg-transparent p-6 hover:text-gray-900"
               >
                 For business
               </a>
@@ -118,14 +118,14 @@ const Header = () => {
                 onMouseOver={() => setSignIn(!signin)}
                 onMouseOut={() => setSignIn(!signin)}
                 id={styles.underline}
-                className="mr-5 bg-blue-700 p-6 hover:text-gray-900"
+                className="bg-transparent p-6 hover:text-gray-900"
               >
                 Sign In
               </a>
 
               <a
                 id={styles.underline}
-                className=" bg-blue-900 p-6 hover:text-gray-900"
+                className=" bg-transparent p-6 hover:text-gray-900"
               >
                 Download App
               </a>
