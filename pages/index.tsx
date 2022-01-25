@@ -7,6 +7,8 @@ import Sticky from "react-sticky-el";
 import Input from "./components/Input";
 import Carousel from "./components/Carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import EarlyAccess from "./components/EarlyAccess";
+import Choose from "./components/Choose";
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +27,10 @@ const Home: NextPage = () => {
       <Input />
 
       <Carousel />
+
+      <EarlyAccess />
+
+      <Choose />
     </div>
   );
 };

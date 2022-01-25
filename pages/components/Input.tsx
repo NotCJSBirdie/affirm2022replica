@@ -6,7 +6,10 @@ const Input = () => {
       <div className="flex flex-row items-center bg-white rounded-full shadow-2xl py-5">
         <div className="w-11/12 flex flex-col ml-8">
           <span className="w-full">Stores</span>
-          <input className="outline-none w-full"></input>
+          <input
+            placeholder="Where are you shopping?"
+            className="outline-none w-full"
+          ></input>
         </div>
         <div className="w-1/12 ml-12 mr-8">
           <button className="w-full bg-purple-600 flex flex-col items-center py-2 px-5 rounded-full">
