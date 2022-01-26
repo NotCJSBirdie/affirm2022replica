@@ -8,6 +8,11 @@ module.exports = {
     "./pages/components/Carousel.tsx",
     "./pages/components/EarlyAccess.tsx",
     "./pages/components/Choose.tsx",
+    "./pages/components/HowToBuy.tsx",
+    "./pages/components/APR.tsx",
+    "./pages/components/Featured.tsx",
+    "./pages/components/Clear.tsx",
+    "./pages/components/Trending.tsx",
   ],
   theme: {
     extend: {},

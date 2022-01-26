@@ -9,6 +9,11 @@ import Carousel from "./components/Carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import EarlyAccess from "./components/EarlyAccess";
 import Choose from "./components/Choose";
+import HowToBuy from "./components/HowToBuy";
+import APR from "./components/APR";
+import Featured from "./components/Featured";
+import Clear from "./components/Clear";
+import Trending from "./components/Trending";
 
 const Home: NextPage = () => {
   return (
@@ -31,6 +36,16 @@ const Home: NextPage = () => {
       <EarlyAccess />
 
       <Choose />
+
+      <HowToBuy />
+
+      <APR />
+
+      <Featured />
+
+      <Clear />
+
+      <Trending />
     </div>
   );
 };

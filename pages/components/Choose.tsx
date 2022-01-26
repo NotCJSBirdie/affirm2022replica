@@ -2,9 +2,9 @@ import styles from "./css/Choose.module.css";
 
 const Choose = () => {
   return (
-    <div>
-      <div className="grid grid-cols-4 grid-rows-3 gap-2">
-        <div className="col-span-2 row-span-2 p-4 flex flex-col items-start">
+    <div className="py-24  px-4 md:px-12">
+      <div className="grid grid-cols-1 grid-rows-9 md:grid-cols-4 md:grid-rows-3 gap-2">
+        <div className="col-span-1 row-span-1 md:col-span-2 md:row-span-2 p-4 flex flex-col items-start">
           <img
             src="https://cdn-assets.affirm.com/vcn_buy/v1/merchants/X96ZPHNIR5GRHG1W/hero2021120749/hero_offer.png?width=1382px&format=jpg&quality=75"
             alt="walmart"
