@@ -14,6 +14,8 @@ import APR from "./components/APR";
 import Featured from "./components/Featured";
 import Clear from "./components/Clear";
 import Trending from "./components/Trending";
+import Pay from "./components/Pay";
+import Footer from "./components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -46,6 +48,10 @@ const Home: NextPage = () => {
       <Clear />
 
       <Trending />
+
+      <Pay />
+
+      <Footer />
     </div>
   );
 };
