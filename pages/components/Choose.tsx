@@ -6,8 +6,8 @@ const Choose = () => {
   return (
     <div className="py-24  px-4 md:px-12">
       <div className="grid grid-cols-1 grid-rows-9 md:grid-cols-4 md:grid-rows-3 gap-2">
-        <div className="col-span-1 row-span-1 md:col-span-2 md:row-span-2 p-4 flex flex-col items-start">
-          <div id={styles.walmart} className=" w-full h-full pt-80">
+        <div className="col-span-1 row-span-1 md:col-span-2 md:row-span-2 p-4 flex flex-col items-start overflow-hidden">
+          <div id={styles.walmart} className=" w-full h-full pt-80 ease-in-out">
             <img
               src="https://cdn-assets.affirm.com/vcn_buy/v1/merchants/X96ZPHNIR5GRHG1W/logo2019111308/logo_offer.png?width=128px&format=jpg&quality=75"
               alt="wallmartlogo"
