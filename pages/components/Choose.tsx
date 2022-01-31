@@ -1,15 +1,20 @@
 import styles from "./css/Choose.module.css";
+import Image from "next/image";
+import { useState } from "react";
 
 const Choose = () => {
   return (
     <div className="py-24  px-4 md:px-12">
       <div className="grid grid-cols-1 grid-rows-9 md:grid-cols-4 md:grid-rows-3 gap-2">
         <div className="col-span-1 row-span-1 md:col-span-2 md:row-span-2 p-4 flex flex-col items-start">
-          <img
-            src="https://cdn-assets.affirm.com/vcn_buy/v1/merchants/X96ZPHNIR5GRHG1W/hero2021120749/hero_offer.png?width=1382px&format=jpg&quality=75"
-            alt="walmart"
-            className="w-full h-full"
-          />
+          <div className=" w-full h-full bg-blue-400 pt-80">
+            <img
+              src="https://cdn-assets.affirm.com/vcn_buy/v1/merchants/X96ZPHNIR5GRHG1W/logo2019111308/logo_offer.png?width=128px&format=jpg&quality=75"
+              alt="wallmartlogo"
+              className="rounded-full mx-6 my-6 w-24 h-24"
+            />
+          </div>
+
           <h1 className="my-2">Wallmart.com</h1>
         </div>
         <div className="col-span-1 row-span-1 p-4 flex flex-col items-start">

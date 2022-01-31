@@ -16,8 +16,34 @@ import Clear from "./components/Clear";
 import Trending from "./components/Trending";
 import Pay from "./components/Pay";
 import Footer from "./components/Footer";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const Home: NextPage = () => {
+  const [navbar, setNavbar] = useState(
+    <div className="z-10 fixed top-0 w-full bg-transparent">
+      <Header />
+    </div>
+  );
+
+  const changeNavbar = () => {
+    if (window.scrollY > 100) {
+      setNavbar(
+        <div className="z-10 fixed top-0 w-full bg-white shadow-2xl">
+          <Header />
+        </div>
+      );
+    } else {
+      setNavbar(
+        <div className="z-10 fixed top-0 w-full bg-transparent">
+          <Header />
+        </div>
+      );
+    }
+  };
+
+  useEffect(changeNavbar, [navbar]);
+
   return (
     <div className="overflow-hidden">
       <Head>
@@ -25,9 +51,8 @@ const Home: NextPage = () => {
         <meta name="AFFIRM 2022 REPLICA" content="This is my showcase #12" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="z-10 absolute top-0 w-full">
-        <Header />
-      </div>
+
+      <div className="">{navbar}</div>
 
       <Hero />
 

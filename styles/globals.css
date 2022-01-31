@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Mangueira";
+  src: url("../public/fonts/Fontspring-DEMO-mangueira-regular.otf");
+}
+
+@font-face {
+  font-family: "Calibre";
+  src: url("../public/fonts/CalibreRegular.otf");
+}

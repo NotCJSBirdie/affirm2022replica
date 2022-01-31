@@ -70,8 +70,8 @@ const Header = () => {
         </div>
       </header>
 
-      <header className="text-gray-600 body-font lg:grid hidden z-50 ">
-        <div className=" container mx-auto grid grid-cols-3 items-center px-12">
+      <header className="text-gray-600 body-font lg:grid hidden z-50 sticky">
+        <div className="bg-transparent container mx-auto grid grid-cols-3 items-center px-12">
           <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 px-8">
             <span className="pr-8 text-3xl">AFFIRM</span>
           </a>
