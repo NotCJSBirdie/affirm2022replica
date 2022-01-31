@@ -1,2 +1,15 @@
 #walmart {
+  background-image: url("https://cdn-assets.affirm.com/vcn_buy/v1/merchants/X96ZPHNIR5GRHG1W/hero2021120749/hero_offer.png?width=1382px&format=jpg&quality=75");
+  background-size: auto;
+  background-position: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+#walmart:hover {
+  background-size: 175%;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
