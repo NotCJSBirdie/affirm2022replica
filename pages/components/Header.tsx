@@ -1,9 +1,6 @@
-import useCollapse from "react-collapsed";
 import { useState } from "react";
-import Image from "next/image";
 import styles from "./css/Header.module.css";
-import { Transition } from "react-transition-group";
-import Swal from "sweetalert2";
+import { useEffect } from "react";
 
 const Header = () => {
   const [menuIcon, setMenuIcon]: any = useState(false);
@@ -19,22 +16,6 @@ const Header = () => {
   const [signin, setSignIn]: any = useState(false);
 
   const [sidebar, setSideBar]: any = useState([{}]);
-
-  const shopFunction = () => {
-    setShop(!shop);
-    setWaysToPay(waystopay);
-    setEarn(earn);
-    setBusiness(business);
-    setSignIn(signin);
-  };
-
-  const waystopayFunction = () => {
-    setShop(shop);
-    setWaysToPay(!waystopay);
-    setEarn(earn);
-    setBusiness(business);
-    setSignIn(signin);
-  };
 
   return (
     <div id={styles.fontfamilyheader} className="h-full">
