@@ -20,30 +20,6 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 const Home: NextPage = () => {
-  const [navbar, setNavbar] = useState(
-    <div className="z-10 fixed top-0 w-full bg-transparent">
-      <Header />
-    </div>
-  );
-
-  const changeNavbar = () => {
-    if (window.scrollY > 100) {
-      setNavbar(
-        <div className="z-10 fixed top-0 w-full bg-white shadow-2xl">
-          <Header />
-        </div>
-      );
-    } else {
-      setNavbar(
-        <div className="z-10 fixed top-0 w-full bg-transparent">
-          <Header />
-        </div>
-      );
-    }
-  };
-
-  useEffect(changeNavbar, [navbar]);
-
   return (
     <div className="overflow-hidden">
       <Head>
@@ -52,7 +28,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="">{navbar}</div>
+      <Header />
 
       <Hero />
 

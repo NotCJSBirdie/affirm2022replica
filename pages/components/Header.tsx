@@ -17,40 +17,8 @@ const Header = () => {
 
   const [sidebar, setSideBar]: any = useState([{}]);
 
-  return (
-    <div id={styles.fontfamilyheader} className="h-full">
-      <header className="text-gray-600 body-font lg:hidden">
-        <div className="container mx-auto flex p-5 flex-row items-center justify-between">
-          <a className="flex title-font font-medium items-center text-gray-900 md:mb-0">
-            <span className="text-3xl">AFFIRM</span>
-          </a>
-          <div>
-            <button
-              onClick={() => setSideBar(!sidebar)}
-              className="inline-flex items-center bg-transparent rounded text-base md:mt-0"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="icon icon-tabler icon-tabler-menu-2"
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="#000000"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <line x1="4" y1="6" x2="20" y2="6" />
-                <line x1="4" y1="12" x2="20" y2="12" />
-                <line x1="4" y1="18" x2="20" y2="18" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </header>
-
+  const [navbar, setNavbar] = useState(
+    <div className="z-10 fixed top-0 w-full bg-transparent">
       <header className="text-gray-600 body-font lg:grid hidden z-50 sticky">
         <div className="bg-transparent container mx-auto grid grid-cols-3 items-center px-12">
           <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 px-8">
@@ -114,6 +82,270 @@ const Header = () => {
           </div>
         </div>
       </header>
+    </div>
+  );
+
+  const changeNavbar = () => {
+    if (window.scrollY > 100) {
+      setNavbar(
+        <div className="z-10 fixed top-0 w-full bg-white shadow-2xl">
+          <header className="text-gray-600 body-font lg:grid hidden z-50 ">
+            <div className="bg-transparent container mx-auto grid grid-cols-3 items-center px-12 ">
+              <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 px-8">
+                <span className="pr-8 text-3xl">AFFIRM</span>
+              </a>
+
+              <div className="flex flex-col items-end border-0 px-3 focus:outline-none md:mt-0 col-span-2">
+                <nav className=" flex flex-row text-base justify-center mx-4">
+                  <a
+                    onMouseOver={() => setShop(!shop)}
+                    onMouseOut={() => setShop(!shop)}
+                    id={styles.underline}
+                    className=" bg-transparent p-6 hover:text-gray-900"
+                  >
+                    Shop
+                  </a>
+
+                  <a
+                    onMouseOver={() => setWaysToPay(!waystopay)}
+                    onMouseOut={() => setWaysToPay(!waystopay)}
+                    id={styles.underline}
+                    className=" bg-transparent p-6 hover:text-gray-900"
+                  >
+                    Ways to pay
+                  </a>
+
+                  <a
+                    onMouseOver={() => setEarn(!earn)}
+                    onMouseOut={() => setEarn(!earn)}
+                    id={styles.underline}
+                    className=" bg-transparent p-6 hover:text-gray-900"
+                  >
+                    Earn
+                  </a>
+
+                  <a
+                    onMouseOver={() => setBusiness(!business)}
+                    onMouseOut={() => setBusiness(!business)}
+                    id={styles.underline}
+                    className="bg-transparent p-6 hover:text-gray-900"
+                  >
+                    For business
+                  </a>
+
+                  <a
+                    onMouseOver={() => setSignIn(!signin)}
+                    onMouseOut={() => setSignIn(!signin)}
+                    id={styles.underline}
+                    className="bg-transparent p-6 hover:text-gray-900"
+                  >
+                    Sign In
+                  </a>
+
+                  <a
+                    id={styles.underline}
+                    className=" bg-transparent p-6 hover:text-gray-900"
+                  >
+                    Download App
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </header>
+        </div>
+      );
+    } else {
+      setNavbar(
+        <div className="z-10 fixed top-0 w-full bg-transparent">
+          <header className="text-gray-600 body-font lg:grid hidden z-50 sticky">
+            <div className="bg-transparent container mx-auto grid grid-cols-3 items-center px-12">
+              <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 px-8">
+                <span className="pr-8 text-3xl">AFFIRM</span>
+              </a>
+
+              <div className="flex flex-col items-end border-0 px-3 focus:outline-none md:mt-0 col-span-2">
+                <nav className=" flex flex-row text-base justify-center mx-4">
+                  <a
+                    onMouseOver={() => setShop(!shop)}
+                    onMouseOut={() => setShop(!shop)}
+                    id={styles.underline}
+                    className=" bg-transparent p-6 hover:text-gray-900"
+                  >
+                    Shop
+                  </a>
+
+                  <a
+                    onMouseOver={() => setWaysToPay(!waystopay)}
+                    onMouseOut={() => setWaysToPay(!waystopay)}
+                    id={styles.underline}
+                    className=" bg-transparent p-6 hover:text-gray-900"
+                  >
+                    Ways to pay
+                  </a>
+
+                  <a
+                    onMouseOver={() => setEarn(!earn)}
+                    onMouseOut={() => setEarn(!earn)}
+                    id={styles.underline}
+                    className=" bg-transparent p-6 hover:text-gray-900"
+                  >
+                    Earn
+                  </a>
+
+                  <a
+                    onMouseOver={() => setBusiness(!business)}
+                    onMouseOut={() => setBusiness(!business)}
+                    id={styles.underline}
+                    className="bg-transparent p-6 hover:text-gray-900"
+                  >
+                    For business
+                  </a>
+
+                  <a
+                    onMouseOver={() => setSignIn(!signin)}
+                    onMouseOut={() => setSignIn(!signin)}
+                    id={styles.underline}
+                    className="bg-transparent p-6 hover:text-gray-900"
+                  >
+                    Sign In
+                  </a>
+
+                  <a
+                    id={styles.underline}
+                    className=" bg-transparent p-6 hover:text-gray-900"
+                  >
+                    Download App
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </header>
+        </div>
+      );
+    }
+  };
+
+  const [mobilenavbar, setMobileNavbar] = useState(
+    <div className="z-10 fixed top-0 w-full bg-transparent">
+      <header className="text-gray-600 body-font lg:hidden">
+        <div className="container mx-auto flex p-5 flex-row items-center justify-between">
+          <a className="flex title-font font-medium items-center text-gray-900 md:mb-0">
+            <span className="text-3xl">AFFIRM</span>
+          </a>
+          <div>
+            <button
+              onClick={() => setSideBar(!sidebar)}
+              className="inline-flex items-center bg-transparent rounded text-base md:mt-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="icon icon-tabler icon-tabler-menu-2"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+  );
+
+  const changeMobileNavbar = () => {
+    if (window.scrollY > 100) {
+      setMobileNavbar(
+        <div className="z-10 fixed top-0 w-full bg-white">
+          <header className="text-gray-600 body-font lg:hidden bg-white">
+            <div className="container mx-auto flex p-5 flex-row items-center justify-between">
+              <a className="flex title-font font-medium items-center text-gray-900 md:mb-0">
+                <span className="text-3xl">AFFIRM</span>
+              </a>
+              <div>
+                <button
+                  onClick={() => setSideBar(!sidebar)}
+                  className="inline-flex items-center bg-transparent rounded text-base md:mt-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="icon icon-tabler icon-tabler-menu-2"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#000000"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </header>
+        </div>
+      );
+    } else {
+      setMobileNavbar(
+        <div className="z-10 fixed top-0 w-full bg-transparent">
+          <header className="text-gray-600 body-font lg:hidden">
+            <div className="container mx-auto flex p-5 flex-row items-center justify-between">
+              <a className="flex title-font font-medium items-center text-gray-900 md:mb-0">
+                <span className="text-3xl">AFFIRM</span>
+              </a>
+              <div>
+                <button
+                  onClick={() => setSideBar(!sidebar)}
+                  className="inline-flex items-center bg-transparent rounded text-base md:mt-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="icon icon-tabler icon-tabler-menu-2"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#000000"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </header>
+        </div>
+      );
+    }
+  };
+
+  useEffect(changeNavbar, [navbar]);
+
+  useEffect(changeMobileNavbar, [mobilenavbar]);
+
+  return (
+    <div id={styles.fontfamilyheader} className="h-full">
+      {mobilenavbar}
+
+      {navbar}
 
       <div
         onMouseLeave={() => setShop(!shop)}
@@ -123,7 +355,7 @@ const Header = () => {
           <div
             onMouseEnter={() => setShop(shop)}
             onMouseLeave={() => setShop(!shop)}
-            className="bg-white shadow-2xl mx-56 mb-16 p-8 grid grid-cols-3"
+            className="shadow-2xl mx-56 mb-16 p-8 grid grid-cols-3 fixed bg-white z-10 top-16"
           >
             <div className="flex flex-col items-start">
               <h1>Where to shop</h1>
@@ -168,9 +400,9 @@ const Header = () => {
           <div
             onMouseEnter={() => setWaysToPay(waystopay)}
             onMouseLeave={() => setWaysToPay(!waystopay)}
-            className="bg-white shadow-2xl mx-72  mb-16 p-8 grid grid-cols-2"
+            className=" shadow-2xl mx-72  mb-16 p-8 grid grid-cols-2 fixed bg-white z-10 top-16"
           >
-            <div className="flex flex-col items-start">
+            <div className="flex flex-col items-start ">
               <h1>Paying with affirm</h1>
               <h2>How it works</h2>
               <h2>Debit + NEW</h2>
@@ -200,7 +432,7 @@ const Header = () => {
             onMouseLeave={() => setEarn(!earn)}
             className="flex flex-col items-end mr-12 "
           >
-            <div className="bg-white shadow-2xl w-1/2  mb-16 p-8 grid grid-cols-1">
+            <div className="bg-white shadow-2xl w-1/2  mb-16 p-8 grid grid-cols-1 fixed  z-10 top-16">
               <div className="flex flex-col items-start">
                 <h1>Paying with affirm</h1>
                 <h2>How it works</h2>
@@ -225,9 +457,9 @@ const Header = () => {
           <div
             onMouseEnter={() => setBusiness(business)}
             onMouseLeave={() => setBusiness(!business)}
-            className="flex flex-col items-end mr-8"
+            className="flex flex-col items-end mr-8 "
           >
-            <div className="bg-white shadow-2xl mx-12  mb-16 p-8 grid grid-cols-4 gap-x-4">
+            <div className="bg-white shadow-2xl mx-12  mb-16 p-8 grid grid-cols-4 gap-x-4 fixed  z-10 top-16">
               <div className="flex flex-col items-start">
                 <h1>Industries</h1>
                 <h2>Home & Lifestyle</h2>
@@ -272,15 +504,15 @@ const Header = () => {
 
       <div
         onMouseLeave={() => setSignIn(!signin)}
-        className="ease-in-out transition-all"
+        className="ease-in-out transition-all "
       >
         {signin ? (
           <div
             onMouseEnter={() => setSignIn(signin)}
             onMouseLeave={() => setSignIn(!signin)}
-            className="flex flex-col items-end mr-8"
+            className="flex flex-col items-end mr-8 "
           >
-            <div className="bg-white shadow-2xl mx-12 mb-16 p-8 grid grid-cols-1 w-1/3">
+            <div className="bg-white shadow-2xl mx-12 mb-16 p-8 grid grid-cols-1 w-1/3 fixed  z-10 top-16">
               <div className="flex flex-col items-center">
                 <button className="bg-purple-600 py-2 px-12 text-white mb-4 rounded-lg w-full">
                   Sign In
@@ -306,8 +538,8 @@ const Header = () => {
             <h1>I am hidden! </h1>
           </div>
         ) : (
-          <div className="flex flex-row h-full">
-            <div className="flex flex-col items-start relative w-1/3">
+          <div className="flex flex-row h-full relative top-20">
+            <div className="flex flex-col items-start w-1/3">
               <div className=" flex flex-col bg-gray-500 opacity-25 px-72 py-4 fixed h-full">
                 <button className="bg-purple-400 rounded-lg px-4 py-2 invisible">
                   CLOSE THE SIDEBAR
@@ -322,7 +554,7 @@ const Header = () => {
                 <h1 className="invisible">ITEM1 </h1>
               </div>
             </div>
-            <div className="flex flex-col items-end relative w-2/3">
+            <div className="flex flex-col items-end w-2/3">
               <div className=" flex flex-col bg-blue-700 text-white px-8 py-4  fixed h-full">
                 <button
                   onClick={() => setSideBar(!sidebar)}
