@@ -1,0 +1,25 @@
+#simplymac {
+  background-image: url("https://cdn-assets.affirm.com/vcn_buy/v1/merchants/TC898F2XCINHC49F/hero2019111308/hero_offer.png?width=576&format=jpg&quality=75");
+  background-size: cover;
+  background-position: center;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s;
+}
+
+#simplymac:hover {
+  background-size: 140%;
+  background-position: center;
+}
+
+#roomandboard {
+  background-image: url("https://cdn-assets.affirm.com/vcn_buy/v1/merchants/NTMW6QA9FVTCHPFW/hero_20190806153045/hero.png?width=576&format=jpg&quality=75");
+  background-size: cover;
+  background-position: center;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s;
+}
+
+#roomandboard:hover {
+  background-size: 140%;
+  background-position: center;
+}
