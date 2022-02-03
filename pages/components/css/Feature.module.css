@@ -1,103 +1,103 @@
-#simplymac {
-  background-image: url("https://cdn-assets.affirm.com/vcn_buy/v1/merchants/TC898F2XCINHC49F/hero2019111308/hero_offer.png?width=576&format=jpg&quality=75");
+#deltavacations {
+  background-image: url("https://cdn-assets.affirm.com/vcn_buy/v1/merchants/ADZ7B0E05VRTMPN2/hero20190109/hero_offer.jpg?width=576&format=jpg&quality=75");
   background-size: cover;
   background-position: center;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: 0.3s;
 }
 
-#simplymac:hover {
+#deltavacations:hover {
   background-size: 120%;
   background-position: center;
 }
 
-#roomandboard {
-  background-image: url("https://cdn-assets.affirm.com/vcn_buy/v1/merchants/NTMW6QA9FVTCHPFW/hero_20190806153045/hero.png?width=576&format=jpg&quality=75");
+#saksfifthavenue {
+  background-image: url("https://cdn-assets.affirm.com/merchant/promos/KGYHY5KUZIA6C5ET/hero2022012002/hero_27.png?width=576&format=jpg&quality=75");
   background-size: cover;
   background-position: center;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: 0.3s;
 }
 
-#roomandboard:hover {
+#saksfifthavenue:hover {
   background-size: 120%;
   background-position: center;
 }
 
-#casper {
-  background-image: url("https://cdn-assets.affirm.com/vcn_buy/v1/merchants/MNLK8D11U6PV4THN/hero_20190711215215/hero.png?width=576&format=jpg&quality=75");
+#reverb {
+  background-image: url("https://cdn-assets.affirm.com/vcn_buy/v1/merchants/P2T82BO89LRD4WYH/hero_20190710101735/hero.png?width=576&format=jpg&quality=75");
   background-size: cover;
   background-position: center;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: 0.3s;
 }
 
-#casper:hover {
+#reverb:hover {
   background-size: 120%;
   background-position: center;
 }
 
-#figs {
-  background-image: url("https://cdn-assets.affirm.com/vcn_buy/v1/merchants/GFFXXAU4GF2951K5/hero/hero.jpg?width=576&format=jpg&quality=75");
+#mirror {
+  background-image: url("https://cdn-assets.affirm.com/vcn_buy/v1/merchants/MZ5NBOKI64F9QBB3/hero_20190806145556/hero.png?width=576&format=jpg&quality=75");
   background-size: cover;
   background-position: center;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: 0.3s;
 }
 
-#figs:hover {
+#mirror:hover {
   background-size: 120%;
   background-position: center;
 }
 
-#goat {
-  background-image: url("https://cdn-assets.affirm.com/merchant/promos/K7DQ6PUAWD5M6F0Y/hero2021111653/hero_17.png?width=576&format=jpg&quality=75");
+#expedia {
+  background-image: url("https://cdn-assets.affirm.com/vcn_buy/v1/merchants/Z0BQ6KB8BLMXH75Q/hero20191204/hero_offer.png?width=576&format=jpg&quality=75");
   background-size: cover;
   background-position: center;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: 0.3s;
 }
 
-#goat:hover {
+#expedia:hover {
   background-size: 120%;
   background-position: center;
 }
 
-#dyson {
-  background-image: url("https://cdn-assets.affirm.com/vcn_buy/v1/merchants/7KSWE7M9ANY6F48C/hero2021092313/Dyson_Hero_2021.png?width=576&format=jpg&quality=75");
+#molekule {
+  background-image: url("https://cdn-assets.affirm.com/vcn_buy/v1/merchants/0ZV27J8P7X3UJJ0R/hero_20190712134510/hero.png?width=576&format=jpg&quality=75");
   background-size: cover;
   background-position: center;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: 0.3s;
 }
 
-#dyson:hover {
+#molekule:hover {
   background-size: 120%;
   background-position: center;
 }
 
-#joybird {
-  background-image: url("https://cdn-assets.affirm.com/vcn_buy/v1/merchants/J82E1ZS1P2YHE6S1/hero_20190712104653/hero.png?width=576&format=jpg&quality=75");
+#thredup {
+  background-image: url("https://cdn-assets.affirm.com/vcn_buy/v1/merchants/JN8GO75EH36UNBA4/hero2019111307/hero_offer.png?width=576&format=jpg&quality=75");
   background-size: cover;
   background-position: center;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: 0.3s;
 }
 
-#joybird:hover {
+#thredup:hover {
   background-size: 120%;
   background-position: center;
 }
 
-#adidas {
-  background-image: url("https://cdn-assets.affirm.com/merchant/promos/7B6478KO7RT4JTU0/hero2022013115/adidas_hero.png?width=576&format=jpg&quality=75");
+#nike {
+  background-image: url("https://cdn-assets.affirm.com/merchant/promos/44WXOQ22LJEYREMX/hero2022013159/nike_hero.png?width=576&format=jpg&quality=75");
   background-size: cover;
   background-position: center;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: 0.3s;
 }
 
-#adidas:hover {
+#nike:hover {
   background-size: 120%;
   background-position: center;
 }
