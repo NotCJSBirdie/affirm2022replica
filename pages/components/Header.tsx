@@ -5,6 +5,7 @@ import ShopCollapsed from "./ShopCollapsed";
 import WaysToPayCollapsed from "./WaysToPayCollapsed";
 import EarnCollapsed from "./EarnCollapsed";
 import ForBusinessCollapsed from "./ForBusinessCollapsed";
+import SignInCollapsed from "./SignInCollapsed";
 
 const Header = () => {
   const [menuIcon, setMenuIcon]: any = useState(false);
@@ -369,6 +370,12 @@ const Header = () => {
     </div>
   );
 
+  const [signInCollapse, setSignInCollapse] = useState(
+    <div>
+      <SignInCollapsed />
+    </div>
+  );
+
   return (
     <div id={styles.fontfamilyheader} className="h-full">
       {mobilenavbar}
@@ -612,6 +619,7 @@ const Header = () => {
                     setWaysToPayCollapse(<div>{waysToPayCollapse}</div>);
                     setEarnCollapse(<div>{earnCollapse}</div>);
                     setForBusinessCollapse(<div>{forBusinessCollapse}</div>);
+                    setSignInCollapse(<div>{signInCollapse}</div>);
                   }}
                 >
                   {shopCollapse}
@@ -622,6 +630,7 @@ const Header = () => {
                     setShopCollapse(<div>{shopCollapse}</div>);
                     setEarnCollapse(<div>{earnCollapse}</div>);
                     setForBusinessCollapse(<div>{forBusinessCollapse}</div>);
+                    setSignInCollapse(<div>{signInCollapse}</div>);
                   }}
                 >
                   {waysToPayCollapse}
@@ -632,6 +641,7 @@ const Header = () => {
                     setShopCollapse(<div>{shopCollapse}</div>);
                     setWaysToPayCollapse(<div>{waysToPayCollapse}</div>);
                     setForBusinessCollapse(<div>{forBusinessCollapse}</div>);
+                    setSignInCollapse(<div>{signInCollapse}</div>);
                   }}
                 >
                   {earnCollapse}
@@ -642,9 +652,21 @@ const Header = () => {
                     setShopCollapse(<div>{shopCollapse}</div>);
                     setWaysToPayCollapse(<div>{waysToPayCollapse}</div>);
                     setEarnCollapse(<div>{earnCollapse}</div>);
+                    setSignInCollapse(<div>{signInCollapse}</div>);
                   }}
                 >
                   {forBusinessCollapse}
+                </div>
+
+                <div
+                  onClick={() => {
+                    setShopCollapse(<div>{shopCollapse}</div>);
+                    setWaysToPayCollapse(<div>{waysToPayCollapse}</div>);
+                    setEarnCollapse(<div>{earnCollapse}</div>);
+                    setForBusinessCollapse(<div>{forBusinessCollapse}</div>);
+                  }}
+                >
+                  {signInCollapse}
                 </div>
               </div>
             </div>

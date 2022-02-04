@@ -1,20 +1,20 @@
 import React from "react";
+import styles from "./css/SignInCollapsed.module.css";
 import useCollapse from "react-collapsed";
 import { useState } from "react";
-import styles from "./css/WaysToPayCollapsed.module.css";
 
-const WaysToPayCollapsed = () => {
+const SignInCollapsed = () => {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
 
   const [arrow, setArrow]: any = useState(false);
   return (
     <div>
       <div
-        className="flex flex-row title-font font-medium items-center text-black  active:transition-transform"
+        className="flex flex-row  title-font font-medium items-center text-black  md:mb-0 active:transition-transform"
         onClick={() => setArrow(!arrow)}
       >
         <button className="flex flex-row" {...getToggleProps()}>
-          <span className="text-3xl">Ways To Pay</span>
+          <span className="text-3xl">Sign In</span>
           <div>
             {arrow ? (
               <svg
@@ -53,7 +53,7 @@ const WaysToPayCollapsed = () => {
         </button>
       </div>
 
-      <div className="px-5 py-2">
+      <div className="px-5 ">
         <section {...getCollapseProps()}>
           <h1 id={styles.reactcollapse}>Pieces</h1>
           <h1 id={styles.reactcollapse}>Designers</h1>
@@ -65,4 +65,4 @@ const WaysToPayCollapsed = () => {
   );
 };
 
-export default WaysToPayCollapsed;
+export default SignInCollapsed;

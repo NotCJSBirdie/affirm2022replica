@@ -19,9 +19,9 @@ const ForBusinessCollapsed = () => {
             {arrow ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="icon icon-tabler icon-tabler-arrow-narrow-up ml-1 ease-in-out transition-all pointer-events-auto"
-                width="40"
-                height="40"
+                className="icon icon-tabler icon-tabler-chevron-down transition-all pointer-events-auto"
+                width="32"
+                height="32"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="#000000"
@@ -30,16 +30,14 @@ const ForBusinessCollapsed = () => {
                 stroke-linejoin="round"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <line x1="12" y1="5" x2="12" y2="19" />
-                <line x1="16" y1="9" x2="12" y2="5" />
-                <line x1="8" y1="9" x2="12" y2="5" />
+                <polyline points="6 9 12 15 18 9" />
               </svg>
             ) : (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="icon icon-tabler icon-tabler-arrow-narrow-up ml-1 ease-in-out transition-all pointer-events-auto -rotate-180"
-                width="40"
-                height="40"
+                className="icon icon-tabler icon-tabler-chevron-down transition-all ease-in-out -rotate-180 pointer-events-auto"
+                width="32"
+                height="32"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="#000000"
@@ -48,9 +46,7 @@ const ForBusinessCollapsed = () => {
                 stroke-linejoin="round"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <line x1="12" y1="5" x2="12" y2="19" />
-                <line x1="16" y1="9" x2="12" y2="5" />
-                <line x1="8" y1="9" x2="12" y2="5" />
+                <polyline points="6 9 12 15 18 9" />
               </svg>
             )}
           </div>

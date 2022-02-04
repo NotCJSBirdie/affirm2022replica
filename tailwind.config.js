@@ -19,6 +19,7 @@ module.exports = {
     "./pages/components/WaysToPayCollapsed.tsx",
     "./pages/components/ForBusinessCollapsed.tsx",
     "./pages/components/EarnCollapsed.tsx",
+    "./pages/components/SignInCollapsed.tsx",
   ],
   theme: {
     extend: {},
