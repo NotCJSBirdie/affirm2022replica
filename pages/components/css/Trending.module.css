@@ -1,0 +1,103 @@
+#bestbuy {
+  background-image: url("https://cdn-assets.affirm.com/merchant/promos/WGUM9CGP0OK9R3CL/hero2021111204/hero_14.png?width=576&format=jpg&quality=75");
+  background-size: cover;
+  background-position: center;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s;
+}
+
+#bestbuy:hover {
+  background-size: 120%;
+  background-position: center;
+}
+
+#stockx {
+  background-image: url("https://cdn-assets.affirm.com/vcn_buy/v1/merchants/EDRFEMXM6RU7OHYZ/hero2020080511/hero1.png?width=576&format=jpg&quality=75");
+  background-size: cover;
+  background-position: center;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s;
+}
+
+#stockx:hover {
+  background-size: 120%;
+  background-position: center;
+}
+
+#dji {
+  background-image: url("https://cdn1.affirm.com/platform/public/promos/assets/NSPUC8PSFQHHR163/hero/hero2x.png?width=576&format=jpg&quality=75");
+  background-size: cover;
+  background-position: center;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s;
+}
+
+#dji:hover {
+  background-size: 120%;
+  background-position: center;
+}
+
+#therealreal {
+  background-image: url("https://cdn-assets.affirm.com/merchant/promos/7H0H2PN1QC5KIQW3/hero2021102035/hero_19.png?width=576&format=jpg&quality=75");
+  background-size: cover;
+  background-position: center;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s;
+}
+
+#therealreal:hover {
+  background-size: 120%;
+  background-position: center;
+}
+
+#lull {
+  background-image: url("https://cdn1.affirm.com/platform/public/promos/assets/FL5S2IGC7AVTAHAS/hero/hero2x.png?width=576&format=jpg&quality=75");
+  background-size: cover;
+  background-position: center;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s;
+}
+
+#lull:hover {
+  background-size: 120%;
+  background-position: center;
+}
+
+#tradesy {
+  background-image: url("https://cdn-assets.affirm.com/merchant/promos/YKHCNPR33GOHG3M6/hero2021070843/Tradesy_hero.png?width=576&format=jpg&quality=75");
+  background-size: cover;
+  background-position: center;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s;
+}
+
+#tradesy:hover {
+  background-size: 120%;
+  background-position: center;
+}
+
+#ibuypower {
+  background-image: url("https://cdn-assets.affirm.com/vcn_buy/v1/merchants/T6GXUVZ3PPEXM71C/hero_20190806135157/hero.png?width=576&format=jpg&quality=75");
+  background-size: cover;
+  background-position: center;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s;
+}
+
+#ibuypower:hover {
+  background-size: 120%;
+  background-position: center;
+}
+
+#theragun {
+  background-image: url("https://cdn-assets.affirm.com/vcn_buy/v1/merchants/P7MNFVQETFPEWOZT/hero20200312/hero_offer.png?width=576&format=jpg&quality=75");
+  background-size: cover;
+  background-position: center;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s;
+}
+
+#theragun:hover {
+  background-size: 120%;
+  background-position: center;
+}
