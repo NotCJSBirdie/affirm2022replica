@@ -1,6 +1,9 @@
 import { useState } from "react";
 import styles from "./css/Header.module.css";
 import { useEffect } from "react";
+import ShopCollapsed from "./ShopCollapsed";
+import WaysToPayCollapsed from "./WaysToPayCollapsed";
+import EarnCollapsed from "./EarnCollapsed";
 
 const Header = () => {
   const [menuIcon, setMenuIcon]: any = useState(false);
@@ -264,7 +267,7 @@ const Header = () => {
   const changeMobileNavbar = () => {
     if (window.scrollY > 100) {
       setMobileNavbar(
-        <div className="z-10 fixed top-0 w-full bg-white">
+        <div className="z-10 fixed top-0 w-full bg-white drop-shadow-2xl">
           <header className="text-gray-600 body-font lg:hidden bg-white">
             <div className="container mx-auto flex p-5 flex-row items-center justify-between">
               <a className="flex title-font font-medium items-center text-gray-900 md:mb-0">
@@ -340,6 +343,24 @@ const Header = () => {
   useEffect(changeNavbar, [navbar]);
 
   useEffect(changeMobileNavbar, [mobilenavbar]);
+
+  const [shopCollapse, setShopCollapse] = useState(
+    <div>
+      <ShopCollapsed />
+    </div>
+  );
+
+  const [waysToPayCollapse, setWaysToPayCollapse] = useState(
+    <div>
+      <WaysToPayCollapsed />
+    </div>
+  );
+
+  const [earnCollapse, setEarnCollapse] = useState(
+    <div>
+      <EarnCollapsed />
+    </div>
+  );
 
   return (
     <div id={styles.fontfamilyheader} className="h-full">
@@ -541,7 +562,7 @@ const Header = () => {
           <div className="flex flex-row h-full relative top-20">
             <div className="flex flex-col items-start w-1/3">
               <div className=" flex flex-col bg-gray-500 opacity-25 px-72 py-4 fixed h-full">
-                <button className="bg-purple-400 rounded-lg px-4 py-2 invisible">
+                <button className="bg-white rounded-lg px-4 py-2 invisible">
                   CLOSE THE SIDEBAR
                 </button>
                 <h1 className="invisible">ITEM1 </h1>
@@ -554,22 +575,57 @@ const Header = () => {
                 <h1 className="invisible">ITEM1 </h1>
               </div>
             </div>
+
             <div className="flex flex-col items-end w-2/3">
-              <div className=" flex flex-col bg-blue-700 text-white px-8 py-4  fixed h-full">
+              <div className=" flex flex-col bg-white text-black px-8 py-4  fixed h-full">
                 <button
                   onClick={() => setSideBar(!sidebar)}
-                  className="bg-purple-400 rounded-lg px-4 py-2"
+                  className=" rounded-lg px-4 py-2 self-end"
                 >
-                  CLOSE THE SIDEBAR
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="icon icon-tabler icon-tabler-letter-x"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#000000"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <line x1="7" y1="4" x2="17" y2="20" />
+                    <line x1="17" y1="4" x2="7" y2="20" />
+                  </svg>
                 </button>
-                <h1>ITEM1 </h1>
-                <h1>ITEM1 </h1>
-                <h1>ITEM1 </h1>
-                <h1>ITEM1 </h1>
-                <h1>ITEM1 </h1>
-                <h1>ITEM1 </h1>
-                <h1>ITEM1 </h1>
-                <h1>ITEM1 </h1>
+
+                <div
+                  onClick={() => {
+                    setWaysToPayCollapse(<div>{waysToPayCollapse}</div>);
+                    setEarnCollapse(<div>{earnCollapse}</div>);
+                  }}
+                >
+                  {shopCollapse}
+                </div>
+
+                <div
+                  onClick={() => {
+                    setShopCollapse(<div>{shopCollapse}</div>);
+                    setEarnCollapse(<div>{earnCollapse}</div>);
+                  }}
+                >
+                  {waysToPayCollapse}
+                </div>
+
+                <div
+                  onClick={() => {
+                    setShopCollapse(<div>{shopCollapse}</div>);
+                    setWaysToPayCollapse(<div>{waysToPayCollapse}</div>);
+                  }}
+                >
+                  {earnCollapse}
+                </div>
               </div>
             </div>
           </div>
