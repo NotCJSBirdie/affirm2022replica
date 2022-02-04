@@ -10,7 +10,7 @@ const ForBusinessCollapsed = () => {
   return (
     <div>
       <div
-        className="flex flex-row  title-font font-medium items-center text-black  md:mb-0 active:transition-transform"
+        className="title-font flex  flex-row items-center font-medium text-black  active:transition-transform md:mb-0"
         onClick={() => setArrow(!arrow)}
       >
         <button className="flex flex-row" {...getToggleProps()}>
@@ -19,7 +19,7 @@ const ForBusinessCollapsed = () => {
             {arrow ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="icon icon-tabler icon-tabler-chevron-down transition-all pointer-events-auto"
+                className="icon icon-tabler icon-tabler-chevron-down pointer-events-auto transition-all"
                 width="32"
                 height="32"
                 viewBox="0 0 24 24"
@@ -35,7 +35,7 @@ const ForBusinessCollapsed = () => {
             ) : (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="icon icon-tabler icon-tabler-chevron-down transition-all ease-in-out -rotate-180 pointer-events-auto"
+                className="icon icon-tabler icon-tabler-chevron-down pointer-events-auto -rotate-180 transition-all ease-in-out"
                 width="32"
                 height="32"
                 viewBox="0 0 24 24"

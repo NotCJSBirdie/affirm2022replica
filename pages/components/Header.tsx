@@ -23,15 +23,15 @@ const Header = () => {
   const [sidebar, setSideBar]: any = useState([{}]);
 
   const [navbar, setNavbar] = useState(
-    <div className="z-10 fixed top-0 w-full bg-transparent">
-      <header className="text-gray-600 body-font lg:grid hidden z-50 sticky">
-        <div className="bg-transparent container mx-auto grid grid-cols-3 items-center px-12">
-          <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 px-8">
+    <div className="fixed top-0 z-10 w-full bg-transparent">
+      <header className="body-font sticky z-50 hidden text-gray-600 lg:grid">
+        <div className="container mx-auto grid grid-cols-3 items-center bg-transparent px-12">
+          <a className="title-font mb-4 flex items-center px-8 font-medium text-gray-900 md:mb-0">
             <span className="pr-8 text-3xl">AFFIRM</span>
           </a>
 
-          <div className="flex flex-col items-end border-0 px-3 focus:outline-none md:mt-0 col-span-2">
-            <nav className=" flex flex-row text-base justify-center mx-4">
+          <div className="col-span-2 flex flex-col items-end border-0 px-3 focus:outline-none md:mt-0">
+            <nav className=" mx-4 flex flex-row justify-center text-base">
               <a
                 onMouseOver={() => setShop(!shop)}
                 onMouseOut={() => setShop(!shop)}
@@ -93,15 +93,15 @@ const Header = () => {
   const changeNavbar = () => {
     if (window.scrollY > 100) {
       setNavbar(
-        <div className="z-10 fixed top-0 w-full bg-white shadow-2xl">
-          <header className="text-gray-600 body-font lg:grid hidden z-50 ">
-            <div className="bg-transparent container mx-auto grid grid-cols-3 items-center px-12 ">
-              <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 px-8">
+        <div className="fixed top-0 z-10 w-full bg-white shadow-2xl">
+          <header className="body-font z-50 hidden text-gray-600 lg:grid ">
+            <div className="container mx-auto grid grid-cols-3 items-center bg-transparent px-12 ">
+              <a className="title-font mb-4 flex items-center px-8 font-medium text-gray-900 md:mb-0">
                 <span className="pr-8 text-3xl">AFFIRM</span>
               </a>
 
-              <div className="flex flex-col items-end border-0 px-3 focus:outline-none md:mt-0 col-span-2">
-                <nav className=" flex flex-row text-base justify-center mx-4">
+              <div className="col-span-2 flex flex-col items-end border-0 px-3 focus:outline-none md:mt-0">
+                <nav className=" mx-4 flex flex-row justify-center text-base">
                   <a
                     onMouseOver={() => setShop(!shop)}
                     onMouseOut={() => setShop(!shop)}
@@ -161,15 +161,15 @@ const Header = () => {
       );
     } else {
       setNavbar(
-        <div className="z-10 fixed top-0 w-full bg-transparent">
-          <header className="text-gray-600 body-font lg:grid hidden z-50 sticky">
-            <div className="bg-transparent container mx-auto grid grid-cols-3 items-center px-12">
-              <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 px-8">
+        <div className="fixed top-0 z-10 w-full bg-transparent">
+          <header className="body-font sticky z-50 hidden text-gray-600 lg:grid">
+            <div className="container mx-auto grid grid-cols-3 items-center bg-transparent px-12">
+              <a className="title-font mb-4 flex items-center px-8 font-medium text-gray-900 md:mb-0">
                 <span className="pr-8 text-3xl">AFFIRM</span>
               </a>
 
-              <div className="flex flex-col items-end border-0 px-3 focus:outline-none md:mt-0 col-span-2">
-                <nav className=" flex flex-row text-base justify-center mx-4">
+              <div className="col-span-2 flex flex-col items-end border-0 px-3 focus:outline-none md:mt-0">
+                <nav className=" mx-4 flex flex-row justify-center text-base">
                   <a
                     onMouseOver={() => setShop(!shop)}
                     onMouseOut={() => setShop(!shop)}
@@ -231,16 +231,16 @@ const Header = () => {
   };
 
   const [mobilenavbar, setMobileNavbar] = useState(
-    <div className="z-10 fixed top-0 w-full bg-transparent">
-      <header className="text-gray-600 body-font lg:hidden">
-        <div className="container mx-auto flex p-5 flex-row items-center justify-between">
-          <a className="flex title-font font-medium items-center text-gray-900 md:mb-0">
+    <div className="fixed top-0 z-10 w-full bg-transparent">
+      <header className="body-font text-gray-600 lg:hidden">
+        <div className="container mx-auto flex flex-row items-center justify-between p-5">
+          <a className="title-font flex items-center font-medium text-gray-900 md:mb-0">
             <span className="text-3xl">AFFIRM</span>
           </a>
           <div>
             <button
               onClick={() => setSideBar(!sidebar)}
-              className="inline-flex items-center bg-transparent rounded text-base md:mt-0"
+              className="inline-flex items-center rounded bg-transparent text-base md:mt-0"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -269,16 +269,16 @@ const Header = () => {
   const changeMobileNavbar = () => {
     if (window.scrollY > 100) {
       setMobileNavbar(
-        <div className="z-10 fixed top-0 w-full bg-white drop-shadow-2xl">
-          <header className="text-gray-600 body-font lg:hidden bg-white">
-            <div className="container mx-auto flex p-5 flex-row items-center justify-between">
-              <a className="flex title-font font-medium items-center text-gray-900 md:mb-0">
+        <div className="fixed top-0 z-10 w-full bg-white drop-shadow-2xl">
+          <header className="body-font bg-white text-gray-600 lg:hidden">
+            <div className="container mx-auto flex flex-row items-center justify-between p-5">
+              <a className="title-font flex items-center font-medium text-gray-900 md:mb-0">
                 <span className="text-3xl">AFFIRM</span>
               </a>
               <div>
                 <button
                   onClick={() => setSideBar(!sidebar)}
-                  className="inline-flex items-center bg-transparent rounded text-base md:mt-0"
+                  className="inline-flex items-center rounded bg-transparent text-base md:mt-0"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -305,16 +305,16 @@ const Header = () => {
       );
     } else {
       setMobileNavbar(
-        <div className="z-10 fixed top-0 w-full bg-transparent">
-          <header className="text-gray-600 body-font lg:hidden">
-            <div className="container mx-auto flex p-5 flex-row items-center justify-between">
-              <a className="flex title-font font-medium items-center text-gray-900 md:mb-0">
+        <div className="fixed top-0 z-10 w-full bg-transparent">
+          <header className="body-font text-gray-600 lg:hidden">
+            <div className="container mx-auto flex flex-row items-center justify-between p-5">
+              <a className="title-font flex items-center font-medium text-gray-900 md:mb-0">
                 <span className="text-3xl">AFFIRM</span>
               </a>
               <div>
                 <button
                   onClick={() => setSideBar(!sidebar)}
-                  className="inline-flex items-center bg-transparent rounded text-base md:mt-0"
+                  className="inline-flex items-center rounded bg-transparent text-base md:mt-0"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -384,13 +384,13 @@ const Header = () => {
 
       <div
         onMouseLeave={() => setShop(!shop)}
-        className="ease-in-out transition-all"
+        className="transition-all ease-in-out"
       >
         {shop ? (
           <div
             onMouseEnter={() => setShop(shop)}
             onMouseLeave={() => setShop(!shop)}
-            className="shadow-2xl mx-56 mb-16 p-8 grid grid-cols-3 fixed bg-white z-10 top-16"
+            className="fixed top-16 z-10 mx-56 mb-16 grid grid-cols-3 bg-white p-8 shadow-2xl"
           >
             <div className="flex flex-col items-start">
               <h1>Where to shop</h1>
@@ -417,7 +417,7 @@ const Header = () => {
 
             <div className="flex flex-col items-start">
               <img
-                className="object-cover object-center w-full h-full"
+                className="h-full w-full object-cover object-center"
                 src="https://images.ctfassets.net/4rc1asww3mw7/1vY5LxWJ7VqQgJ0LDfLV4d/4495a05b12097bcaeffb1892ad5b6cfd/1x1_featured_content_Gucci__1_.jpg?w=360&h=492&q=75&fm=webp"
                 alt="gucci"
               />
@@ -435,7 +435,7 @@ const Header = () => {
           <div
             onMouseEnter={() => setWaysToPay(waystopay)}
             onMouseLeave={() => setWaysToPay(!waystopay)}
-            className=" shadow-2xl mx-72  mb-16 p-8 grid grid-cols-2 fixed bg-white z-10 top-16"
+            className=" fixed top-16  z-10 mx-72 mb-16 grid grid-cols-2 bg-white p-8 shadow-2xl"
           >
             <div className="flex flex-col items-start ">
               <h1>Paying with affirm</h1>
@@ -447,7 +447,7 @@ const Header = () => {
 
             <div className="flex flex-col items-start ">
               <img
-                className="object-cover object-center w-full h-full "
+                className="h-full w-full object-cover object-center "
                 src="https://images.ctfassets.net/4rc1asww3mw7/6xTWwf59EaarFomi8fJEQd/841ea728dd6f317120954f6085eb4095/Featured_content_Large_Debit_.jpg?w=768&h=492&q=75&fm=webp"
                 alt="waystopay"
               />
@@ -465,9 +465,9 @@ const Header = () => {
           <div
             onMouseEnter={() => setEarn(earn)}
             onMouseLeave={() => setEarn(!earn)}
-            className="flex flex-col items-end mr-12 "
+            className="mr-12 flex flex-col items-end "
           >
-            <div className="bg-white shadow-2xl w-1/2  mb-16 p-8 grid grid-cols-1 fixed  z-10 top-16">
+            <div className="fixed top-16 z-10  mb-16 grid w-1/2 grid-cols-1 bg-white  p-8 shadow-2xl">
               <div className="flex flex-col items-start">
                 <h1>Paying with affirm</h1>
                 <h2>How it works</h2>
@@ -486,15 +486,15 @@ const Header = () => {
 
       <div
         onMouseLeave={() => setBusiness(!business)}
-        className="ease-in-out transition-all"
+        className="transition-all ease-in-out"
       >
         {business ? (
           <div
             onMouseEnter={() => setBusiness(business)}
             onMouseLeave={() => setBusiness(!business)}
-            className="flex flex-col items-end mr-8 "
+            className="mr-8 flex flex-col items-end "
           >
-            <div className="bg-white shadow-2xl mx-12  mb-16 p-8 grid grid-cols-4 gap-x-4 fixed  z-10 top-16">
+            <div className="fixed top-16 z-10  mx-12 mb-16 grid grid-cols-4 gap-x-4 bg-white  p-8 shadow-2xl">
               <div className="flex flex-col items-start">
                 <h1>Industries</h1>
                 <h2>Home & Lifestyle</h2>
@@ -524,7 +524,7 @@ const Header = () => {
               </div>
 
               <div className="flex flex-col items-center">
-                <button className="px-12 py-4 bg-purple-700 text-white rounded-lg">
+                <button className="rounded-lg bg-purple-700 px-12 py-4 text-white">
                   Get started
                 </button>
               </div>
@@ -539,21 +539,21 @@ const Header = () => {
 
       <div
         onMouseLeave={() => setSignIn(!signin)}
-        className="ease-in-out transition-all "
+        className="transition-all ease-in-out "
       >
         {signin ? (
           <div
             onMouseEnter={() => setSignIn(signin)}
             onMouseLeave={() => setSignIn(!signin)}
-            className="flex flex-col items-end mr-8 "
+            className="mr-8 flex flex-col items-end "
           >
-            <div className="bg-white shadow-2xl mx-12 mb-16 p-8 grid grid-cols-1 w-1/3 fixed  z-10 top-16">
+            <div className="fixed top-16 z-10 mx-12 mb-16 grid w-1/3 grid-cols-1 bg-white  p-8 shadow-2xl">
               <div className="flex flex-col items-center">
-                <button className="bg-purple-600 py-2 px-12 text-white mb-4 rounded-lg w-full">
+                <button className="mb-4 w-full rounded-lg bg-purple-600 py-2 px-12 text-white">
                   Sign In
                 </button>
                 <h2 className="mb-4">Create Account</h2>
-                <button className="bg-purple-600 py-2 px-12 text-white mb-4 rounded-lg w-full">
+                <button className="mb-4 w-full rounded-lg bg-purple-600 py-2 px-12 text-white">
                   Business sign-In
                 </button>
                 <h2>Business sign-up</h2>
@@ -567,16 +567,16 @@ const Header = () => {
         )}
       </div>
 
-      <div id={styles.sidebar} className="h-full relative z-10 lg:hidden">
+      <div id={styles.sidebar} className="relative z-10 h-full lg:hidden">
         {sidebar ? (
           <div className="hidden">
             <h1>I am hidden! </h1>
           </div>
         ) : (
-          <div className="flex flex-row h-full relative top-20">
-            <div className="flex flex-col items-start w-1/3">
-              <div className=" flex flex-col bg-gray-500 opacity-25 px-72 py-4 fixed h-full">
-                <button className="bg-white rounded-lg px-4 py-2 invisible">
+          <div className="relative top-20 flex h-full flex-row">
+            <div className="flex w-1/3 flex-col items-start">
+              <div className=" fixed flex h-full flex-col bg-gray-500 px-72 py-4 opacity-25">
+                <button className="invisible rounded-lg bg-white px-4 py-2">
                   CLOSE THE SIDEBAR
                 </button>
                 <h1 className="invisible">ITEM1 </h1>
@@ -590,11 +590,11 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="flex flex-col items-end w-2/3">
-              <div className=" flex flex-col bg-white text-black px-8 py-4  fixed h-full">
+            <div className="flex w-2/3 flex-col items-end">
+              <div className=" fixed flex h-full flex-col bg-white px-8  py-4 text-black">
                 <button
                   onClick={() => setSideBar(!sidebar)}
-                  className=" rounded-lg px-4 py-2 self-end"
+                  className=" self-end rounded-lg px-4 py-2"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

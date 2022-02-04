@@ -3,10 +3,10 @@ import styles from "./css/Pay.module.css";
 const Pay = () => {
   return (
     <div>
-      <section id={styles.paysection} className="text-black body-font mx-4">
-        <div className="container mx-auto flex px-12 py-24 md:flex-row flex-col items-center">
-          <div className="w-full md:w-2/3 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+      <section id={styles.paysection} className="body-font mx-4 text-black">
+        <div className="container mx-auto flex flex-col items-center px-12 py-24 md:flex-row">
+          <div className="mb-16 flex w-full flex-col items-center text-center md:mb-0 md:w-2/3 md:items-start md:text-left">
+            <h1 className="title-font mb-4 text-3xl font-medium text-white sm:text-4xl">
               Pay on the go, wherever you go
             </h1>
             <p className="mb-8 leading-relaxed text-white">
@@ -14,19 +14,19 @@ const Pay = () => {
               almost anywhere.
             </p>
             <div className="flex justify-center">
-              <div className="flex flex-row items-center bg-white rounded-full shadow-2xl py-2 w-full">
-                <div className="w-11/12 flex flex-col ml-8">
+              <div className="flex w-full flex-row items-center rounded-full bg-white py-2 shadow-2xl">
+                <div className="ml-8 flex w-11/12 flex-col">
                   <span className="w-full text-left">TEXT ME THE APP</span>
                   <input
                     placeholder="Enter mobile number"
-                    className="outline-none w-full"
+                    className="w-full outline-none"
                   ></input>
                 </div>
 
-                <div className="w-1/12 ml-12 md:ml-32 mr-9">
+                <div className="ml-12 mr-9 w-1/12 md:ml-32">
                   <button
                     id={styles.arrowbutton}
-                    className="w-full flex flex-col items-center py-2 px-7 rounded-full"
+                    className="flex w-full flex-col items-center rounded-full py-2 px-7"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -50,9 +50,9 @@ const Pay = () => {
               </div>
             </div>
           </div>
-          <div className="md:w-1/3 w-full">
+          <div className="w-full md:w-1/3">
             <img
-              className="object-cover object-center rounded"
+              className="rounded object-cover object-center"
               alt="hero"
               src="https://images.ctfassets.net/4rc1asww3mw7/0WylE44f1po0svS6X5jGP/b43d1a701c38bd3f464e14e2e1c71948/Pay-on-the-go_UI_2x-min.png?w=2336&q=80&fm=webp"
             />

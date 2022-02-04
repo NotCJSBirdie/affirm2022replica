@@ -10,7 +10,7 @@ const HowToBuy = () => {
         transitionMode="fade"
         renderCenterLeftControls={({ previousSlide }) => (
           <button
-            className="bg-white text-black p-2 ml-2 rounded-full"
+            className="ml-2 rounded-full bg-white p-2 text-black"
             onClick={previousSlide}
           >
             <svg
@@ -32,7 +32,7 @@ const HowToBuy = () => {
         )}
         renderCenterRightControls={({ nextSlide }) => (
           <button
-            className="bg-white text-black p-2 ml-2 rounded-full"
+            className="ml-2 rounded-full bg-white p-2 text-black"
             onClick={nextSlide}
           >
             <svg
@@ -64,10 +64,10 @@ const HowToBuy = () => {
       >
         <div className="">
           <p id={styles.slide1} className="px-16 py-5">
-            <section className="text-gray-600 body-font">
-              <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                  <h1 className="title-font sm:text-5xl text-3xl mb-4 font-medium text-gray-900">
+            <section className="body-font text-gray-600">
+              <div className="container mx-auto flex flex-col items-center px-5 py-24 md:flex-row">
+                <div className="mb-16 flex flex-col items-center text-center md:mb-0 md:w-1/2 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24">
+                  <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 sm:text-5xl">
                     How to buy with Affirm
                   </h1>
 
@@ -77,7 +77,7 @@ const HowToBuy = () => {
                     <h1 className="mr-5">Step 3</h1>
                   </div>
 
-                  <h1 className="title-font text-3xl font-medium text-gray-900 my-12">
+                  <h1 className="title-font my-12 text-3xl font-medium text-gray-900">
                     Go shopping
                   </h1>
 
@@ -88,22 +88,22 @@ const HowToBuy = () => {
                   </p>
 
                   <div className="flex justify-center">
-                    <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                    <button className="inline-flex rounded border-0 bg-indigo-500 py-2 px-6 text-lg text-white hover:bg-indigo-600 focus:outline-none">
                       Get Prequalified
                     </button>
-                    <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+                    <button className="ml-4 inline-flex rounded border-0 bg-gray-100 py-2 px-6 text-lg text-gray-700 hover:bg-gray-200 focus:outline-none">
                       Learn More
                     </button>
                   </div>
 
-                  <div className="flex flex-row mt-5">
+                  <div className="mt-5 flex flex-row">
                     This eligibility check won't affect your credit score.
                   </div>
                 </div>
 
                 <div className="w-full md:w-1/2">
                   <img
-                    className="object-cover object-center rounded"
+                    className="rounded object-cover object-center"
                     alt="hero"
                     src="https://images.ctfassets.net/4rc1asww3mw7/1KoZfaqewa156SZYEygRdE/85dd7ab6f3d3d9e453d6412afb0d89cd/AC_Go-shopping_2x.jpg?w=800&h=800&q=70&fm=webp"
                   />
@@ -115,10 +115,10 @@ const HowToBuy = () => {
 
         <div>
           <p id={styles.slide1} className="px-16 py-5">
-            <section className="text-gray-600 body-font">
-              <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                  <h1 className="title-font sm:text-5xl text-3xl mb-4 font-medium text-gray-900">
+            <section className="body-font text-gray-600">
+              <div className="container mx-auto flex flex-col items-center px-5 py-24 md:flex-row">
+                <div className="mb-16 flex flex-col items-center text-center md:mb-0 md:w-1/2 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24">
+                  <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 sm:text-5xl">
                     How to buy with Affirm
                   </h1>
 
@@ -128,7 +128,7 @@ const HowToBuy = () => {
                     <h1 className="mr-5">Step 3</h1>
                   </div>
 
-                  <h1 className="title-font text-3xl font-medium text-gray-900 my-12">
+                  <h1 className="title-font my-12 text-3xl font-medium text-gray-900">
                     Choose your payment terms
                   </h1>
 
@@ -139,22 +139,22 @@ const HowToBuy = () => {
                   </p>
 
                   <div className="flex justify-center">
-                    <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                    <button className="inline-flex rounded border-0 bg-indigo-500 py-2 px-6 text-lg text-white hover:bg-indigo-600 focus:outline-none">
                       Get Prequalified
                     </button>
-                    <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+                    <button className="ml-4 inline-flex rounded border-0 bg-gray-100 py-2 px-6 text-lg text-gray-700 hover:bg-gray-200 focus:outline-none">
                       Learn More
                     </button>
                   </div>
 
-                  <div className="flex flex-row mt-5">
+                  <div className="mt-5 flex flex-row">
                     This eligibility check won't affect your credit score.
                   </div>
                 </div>
 
                 <div className="w-full md:w-1/2">
                   <img
-                    className="object-cover object-center rounded"
+                    className="rounded object-cover object-center"
                     alt="hero"
                     src="https://images.ctfassets.net/4rc1asww3mw7/27sXoHxT5PEszFxj7bjY84/b456e5ca8cd4c56c9d4ef40f11ca2c28/AC_Payment-terms_2x.jpg?w=800&h=800&q=70&fm=webp"
                   />
@@ -166,10 +166,10 @@ const HowToBuy = () => {
 
         <div>
           <p id={styles.slide1} className="px-16 py-5">
-            <section className="text-gray-600 body-font">
-              <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                  <h1 className="title-font sm:text-5xl text-3xl mb-4 font-medium text-gray-900">
+            <section className="body-font text-gray-600">
+              <div className="container mx-auto flex flex-col items-center px-5 py-24 md:flex-row">
+                <div className="mb-16 flex flex-col items-center text-center md:mb-0 md:w-1/2 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24">
+                  <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 sm:text-5xl">
                     How to buy with Affirm
                   </h1>
 
@@ -179,7 +179,7 @@ const HowToBuy = () => {
                     <h1 className="mr-5">Step 3</h1>
                   </div>
 
-                  <h1 className="title-font text-3xl font-medium text-gray-900 my-12">
+                  <h1 className="title-font my-12 text-3xl font-medium text-gray-900">
                     Make your payments
                   </h1>
 
@@ -190,22 +190,22 @@ const HowToBuy = () => {
                   </p>
 
                   <div className="flex justify-center">
-                    <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                    <button className="inline-flex rounded border-0 bg-indigo-500 py-2 px-6 text-lg text-white hover:bg-indigo-600 focus:outline-none">
                       Get Prequalified
                     </button>
-                    <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+                    <button className="ml-4 inline-flex rounded border-0 bg-gray-100 py-2 px-6 text-lg text-gray-700 hover:bg-gray-200 focus:outline-none">
                       Learn More
                     </button>
                   </div>
 
-                  <div className="flex flex-row mt-5">
+                  <div className="mt-5 flex flex-row">
                     This eligibility check won't affect your credit score.
                   </div>
                 </div>
 
                 <div className="w-full md:w-1/2 ">
                   <img
-                    className="object-cover object-center rounded"
+                    className="rounded object-cover object-center"
                     alt="hero"
                     src="https://images.ctfassets.net/4rc1asww3mw7/44bwpxWrhgXMPX8SZxJ1kr/8350e224f3d653a0b88816b4a2ab1878/AC_AutoPay_2x.jpg?w=800&h=800&q=70&fm=webp"
                   />

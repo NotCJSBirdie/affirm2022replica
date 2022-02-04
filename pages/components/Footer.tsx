@@ -3,15 +3,15 @@ import styles from "./css/Footer.module.css";
 const Footer = () => {
   return (
     <div>
-      <footer className="text-black body-font">
-        <div className="flex flex-col items-center md:flex-row mx-16 my-12 py-8 border-t-2 border-black">
-          <div className="w-full md:w-1/2 flex flex-col items-start">
-            <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-              <span className="md:ml-4 text-3xl">AFFIRM</span>
+      <footer className="body-font text-black">
+        <div className="mx-16 my-12 flex flex-col items-center border-t-2 border-black py-8 md:flex-row">
+          <div className="flex w-full flex-col items-start md:w-1/2">
+            <a className="title-font flex items-center justify-center font-medium text-gray-900 md:justify-start">
+              <span className="text-3xl md:ml-4">AFFIRM</span>
             </a>
 
-            <p className="mt-36 md:mx-2 m-0 flex flex-row">
-              <button className="mr-4 p-2 rounded-full bg-blue-400">
+            <p className="m-0 mt-36 flex flex-row md:mx-2">
+              <button className="mr-4 rounded-full bg-blue-400 p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-brand-instagram"
@@ -31,7 +31,7 @@ const Footer = () => {
                 </svg>
               </button>
 
-              <button className="mr-4 p-2 rounded-full bg-blue-400">
+              <button className="mr-4 rounded-full bg-blue-400 p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-brand-linkedin"
@@ -53,7 +53,7 @@ const Footer = () => {
                 </svg>
               </button>
 
-              <button className="mr-4 p-2 rounded-full bg-blue-400">
+              <button className="mr-4 rounded-full bg-blue-400 p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-brand-twitter"
@@ -71,7 +71,7 @@ const Footer = () => {
                 </svg>
               </button>
 
-              <button className="mr-4 p-2 rounded-full bg-blue-400">
+              <button className="mr-4 rounded-full bg-blue-400 p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-brand-pinterest"
@@ -91,7 +91,7 @@ const Footer = () => {
                 </svg>
               </button>
 
-              <button className="mr-4 p-2 rounded-full bg-blue-400">
+              <button className="mr-4 rounded-full bg-blue-400 p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-brand-facebook"
@@ -111,13 +111,13 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex flex-col md:w-1/2 w-full items-end">
-            <div className="w-full flex flex-col my-6 md:m-0 md:flex-row">
+          <div className="flex w-full flex-col items-end md:w-1/2">
+            <div className="my-6 flex w-full flex-col md:m-0 md:flex-row">
               <div className="w-full ">
-                <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+                <h2 className="title-font mb-3 text-sm font-medium tracking-widest text-gray-900">
                   Consumers
                 </h2>
-                <nav className="list-none mb-10">
+                <nav className="mb-10 list-none">
                   <li>
                     <a className="text-gray-600 hover:text-gray-800">
                       How it works
@@ -136,10 +136,10 @@ const Footer = () => {
               </div>
 
               <div className="w-full">
-                <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+                <h2 className="title-font mb-3 text-sm font-medium tracking-widest text-gray-900">
                   Businesses
                 </h2>
-                <nav className="list-none mb-10">
+                <nav className="mb-10 list-none">
                   <li>
                     <a className="text-gray-600 hover:text-gray-800">
                       Get started
@@ -159,10 +159,10 @@ const Footer = () => {
               </div>
 
               <div className="w-full">
-                <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+                <h2 className="title-font mb-3 text-sm font-medium tracking-widest text-gray-900">
                   About Affirm
                 </h2>
-                <nav className="list-none mb-10">
+                <nav className="mb-10 list-none">
                   <li>
                     <a className="text-gray-600 hover:text-gray-800">
                       About us
@@ -198,7 +198,7 @@ const Footer = () => {
         </div>
 
         <div className="mx-16">
-          <div className="flex flex-row my-4">
+          <div className="my-4 flex flex-row">
             Payment options through Affirm are provided by these lending
             partners: affirm.com/lenders. Your rate will be 0–30% APR based on
             credit, and is subject to an eligibility check. Options depend on
