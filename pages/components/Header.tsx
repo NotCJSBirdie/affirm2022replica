@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import ShopCollapsed from "./ShopCollapsed";
 import WaysToPayCollapsed from "./WaysToPayCollapsed";
 import EarnCollapsed from "./EarnCollapsed";
+import ForBusinessCollapsed from "./ForBusinessCollapsed";
 
 const Header = () => {
   const [menuIcon, setMenuIcon]: any = useState(false);
@@ -362,6 +363,12 @@ const Header = () => {
     </div>
   );
 
+  const [forBusinessCollapse, setForBusinessCollapse] = useState(
+    <div>
+      <ForBusinessCollapsed />
+    </div>
+  );
+
   return (
     <div id={styles.fontfamilyheader} className="h-full">
       {mobilenavbar}
@@ -604,6 +611,7 @@ const Header = () => {
                   onClick={() => {
                     setWaysToPayCollapse(<div>{waysToPayCollapse}</div>);
                     setEarnCollapse(<div>{earnCollapse}</div>);
+                    setForBusinessCollapse(<div>{forBusinessCollapse}</div>);
                   }}
                 >
                   {shopCollapse}
@@ -613,6 +621,7 @@ const Header = () => {
                   onClick={() => {
                     setShopCollapse(<div>{shopCollapse}</div>);
                     setEarnCollapse(<div>{earnCollapse}</div>);
+                    setForBusinessCollapse(<div>{forBusinessCollapse}</div>);
                   }}
                 >
                   {waysToPayCollapse}
@@ -622,9 +631,20 @@ const Header = () => {
                   onClick={() => {
                     setShopCollapse(<div>{shopCollapse}</div>);
                     setWaysToPayCollapse(<div>{waysToPayCollapse}</div>);
+                    setForBusinessCollapse(<div>{forBusinessCollapse}</div>);
                   }}
                 >
                   {earnCollapse}
+                </div>
+
+                <div
+                  onClick={() => {
+                    setShopCollapse(<div>{shopCollapse}</div>);
+                    setWaysToPayCollapse(<div>{waysToPayCollapse}</div>);
+                    setEarnCollapse(<div>{earnCollapse}</div>);
+                  }}
+                >
+                  {forBusinessCollapse}
                 </div>
               </div>
             </div>

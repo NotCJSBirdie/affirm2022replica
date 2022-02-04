@@ -15,6 +15,10 @@ module.exports = {
     "./pages/components/Trending.tsx",
     "./pages/components/Pay.tsx",
     "./pages/components/Footer.tsx",
+    "./pages/components/ShopCollapsed.tsx",
+    "./pages/components/WaysToPayCollapsed.tsx",
+    "./pages/components/ForBusinessCollapsed.tsx",
+    "./pages/components/EarnCollapsed.tsx",
   ],
   theme: {
     extend: {},
