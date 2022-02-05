@@ -6,18 +6,27 @@ const Pay = () => {
       <section id={styles.paysection} className="body-font mx-4 text-black">
         <div className="container mx-auto flex flex-col items-center px-12 py-24 md:flex-row">
           <div className="mb-16 flex w-full flex-col items-start text-left md:mb-0 md:w-2/3">
-            <h1 className="title-font mb-4 text-3xl font-medium text-white sm:text-4xl">
+            <h1
+              id={styles.paytitle}
+              className="title-font mb-4 text-5xl font-bold text-white"
+            >
               Pay on the go, wherever you go
             </h1>
-            <p className="mb-8 leading-relaxed text-white">
+            <p
+              id={styles.paybody}
+              className="mb-8 text-xl leading-relaxed text-white"
+            >
               Download the Affirm app and discover a new way to pay over time
               almost anywhere.
             </p>
             <div className="flex justify-center">
               <div className="flex w-full flex-row items-center rounded-full bg-white py-2 shadow-2xl">
                 <div className="ml-8 flex w-11/12 flex-col">
-                  <span className="w-full text-left">TEXT ME THE APP</span>
+                  <span id={styles.paytitle} className="w-full text-left">
+                    TEXT ME THE APP
+                  </span>
                   <input
+                    id={styles.paybody}
                     placeholder="Enter mobile number"
                     className="w-full outline-none"
                   ></input>

@@ -101,3 +101,11 @@
   background-size: 120%;
   background-position: center;
 }
+
+#featuretitle {
+  font-family: "Mangueira";
+}
+
+#featurebody {
+  font-family: "Calibre";
+}

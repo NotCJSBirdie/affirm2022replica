@@ -4,10 +4,16 @@ const APR = () => {
   return (
     <div className="px-4 py-24 md:px-16">
       <div className="flex flex-row items-center justify-between py-8">
-        <h1 className="mr-4 ml-4 flex flex-col items-start text-left text-4xl">
-          As low as 0% APR
+        <h1
+          id={styles.aprtitle}
+          className="mr-4 ml-4 flex flex-col items-start text-left text-4xl font-bold"
+        >
+          As low as 0 percent APR
         </h1>
-        <h1 className="ml-4 mr-4 flex flex-col items-end text-right text-xl">
+        <h1
+          id={styles.aprtitle}
+          className="ml-4 mr-4 flex flex-col items-end text-right text-xl font-bold"
+        >
           See all featured stores
         </h1>
       </div>
@@ -24,9 +30,13 @@ const APR = () => {
             />
           </div>
 
-          <h1 className="mt-2">Simply Mac</h1>
+          <h1 id={styles.aprbody} className="mt-2 font-bold">
+            Simply Mac
+          </h1>
 
-          <h1 className="mb-2">As low as 0% APR</h1>
+          <h1 id={styles.aprbody} className="mb-2 font-bold">
+            As low as 0% APR
+          </h1>
         </div>
 
         <div className="col-span-1 row-span-1 flex flex-col items-start p-4">
@@ -40,9 +50,13 @@ const APR = () => {
             />
           </div>
 
-          <h1 className="mt-2">Room & Board</h1>
+          <h1 id={styles.aprbody} className="mt-2 font-bold">
+            Room & Board
+          </h1>
 
-          <h1 className="mb-2">As low as 0% APR</h1>
+          <h1 id={styles.aprbody} className="mb-2 font-bold">
+            As low as 0% APR
+          </h1>
         </div>
 
         <div className="col-span-1 row-span-1 flex flex-col items-start p-4">
@@ -56,9 +70,13 @@ const APR = () => {
             />
           </div>
 
-          <h1 className="mt-2">Casper</h1>
+          <h1 id={styles.aprbody} className="mt-2 font-bold">
+            Casper
+          </h1>
 
-          <h1 className="mb-2">As low as 0% APR</h1>
+          <h1 id={styles.aprbody} className="mb-2 font-bold">
+            As low as 0% APR
+          </h1>
         </div>
 
         <div className="col-span-1 row-span-1 flex flex-col items-start p-4">
@@ -72,9 +90,13 @@ const APR = () => {
             />
           </div>
 
-          <h1 className="mt-2">Figs</h1>
+          <h1 id={styles.aprbody} className="mt-2 font-bold">
+            Figs
+          </h1>
 
-          <h1 className="mb-2">As low as 0% APR</h1>
+          <h1 id={styles.aprbody} className="mb-2 font-bold">
+            As low as 0% APR
+          </h1>
         </div>
 
         <div className="col-span-1 row-span-1 flex flex-col items-start p-4">
@@ -88,9 +110,13 @@ const APR = () => {
             />
           </div>
 
-          <h1 className="mt-2">Goat</h1>
+          <h1 id={styles.aprbody} className="mt-2 font-bold">
+            Goat
+          </h1>
 
-          <h1 className="mb-2">As low as 0% APR</h1>
+          <h1 id={styles.aprbody} className="mb-2 font-bold">
+            As low as 0% APR
+          </h1>
         </div>
 
         <div className="col-span-1 row-span-1 flex flex-col items-start p-4">
@@ -104,9 +130,13 @@ const APR = () => {
             />
           </div>
 
-          <h1 className="mt-2">Dyson</h1>
+          <h1 id={styles.aprbody} className="mt-2 font-bold">
+            Dyson
+          </h1>
 
-          <h1 className="mb-2">As low as 0% APR</h1>
+          <h1 id={styles.aprbody} className="mb-2 font-bold">
+            As low as 0% APR
+          </h1>
         </div>
 
         <div className="col-span-1 row-span-1 flex flex-col items-start p-4">
@@ -120,9 +150,13 @@ const APR = () => {
             />
           </div>
 
-          <h1 className="mt-2">Joybird</h1>
+          <h1 id={styles.aprbody} className="mt-2 font-bold">
+            Joybird
+          </h1>
 
-          <h1 className="mb-2">As low as 0% APR</h1>
+          <h1 id={styles.aprbody} className="mb-2 font-bold">
+            As low as 0% APR
+          </h1>
         </div>
 
         <div className="col-span-1 row-span-1 flex flex-col items-start p-4">
@@ -136,9 +170,13 @@ const APR = () => {
             />
           </div>
 
-          <h1 className="mt-2">Adidas</h1>
+          <h1 id={styles.aprbody} className="mt-2 font-bold">
+            Adidas
+          </h1>
 
-          <h1 className="mb-2">As low as 0% APR</h1>
+          <h1 id={styles.aprbody} className="mb-2 font-bold">
+            As low as 0% APR
+          </h1>
         </div>
       </div>
     </div>

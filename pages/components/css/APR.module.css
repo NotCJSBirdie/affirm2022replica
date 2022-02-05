@@ -101,3 +101,11 @@
   background-size: 120%;
   background-position: center;
 }
+
+#aprtitle {
+  font-family: "Mangueira";
+}
+
+#aprbody {
+  font-family: "Calibre";
+}

@@ -67,38 +67,57 @@ const HowToBuy = () => {
             <section className="body-font text-gray-600">
               <div className="container mx-auto flex flex-col items-center px-5 py-24 md:flex-row">
                 <div className="mb-16 flex flex-col items-start text-left md:w-1/2 md:pr-16">
-                  <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 sm:text-5xl">
+                  <h1
+                    id={styles.howtobuytitle}
+                    className="title-font mb-4 text-3xl font-bold text-gray-900 sm:text-5xl"
+                  >
                     How to buy with Affirm
                   </h1>
 
                   <div className="flex flex-row items-center">
-                    <h1 className="mr-5 underline decoration-purple-700 decoration-2 underline-offset-8">
+                    <h1
+                      id={styles.howtobuybody}
+                      className="mr-5 underline decoration-purple-700 decoration-2 underline-offset-8"
+                    >
                       Step 1
                     </h1>
-                    <h1 className="mr-5">Step 2</h1>
-                    <h1 className="mr-5">Step 3</h1>
+                    <h1 id={styles.howtobuybody} className="mr-5">
+                      Step 2
+                    </h1>
+                    <h1 id={styles.howtobuybody} className="mr-5">
+                      Step 3
+                    </h1>
                   </div>
 
-                  <h1 className="title-font my-12 text-3xl font-medium text-gray-900">
+                  <h1
+                    id={styles.howtobuytitle}
+                    className="title-font my-12 text-3xl font-bold text-gray-900"
+                  >
                     Go shopping
                   </h1>
 
-                  <p className="mb-8 leading-relaxed">
+                  <p id={styles.howtobuybody} className="mb-8 leading-relaxed">
                     Shop your favorite stores online or in-store and pay later
                     with Affirm. You’ll see us at checkout, or you can request a
                     virtual card in the Affirm app.
                   </p>
 
                   <div className="flex justify-center">
-                    <button className="text-md inline-flex rounded-3xl border-2 border-purple-700 bg-purple-700 py-2 px-2 text-white">
+                    <button
+                      id={styles.howtobuybody}
+                      className="text-md inline-flex rounded-3xl border-2 border-purple-700 bg-purple-700 py-2 px-2 text-white"
+                    >
                       Get Prequalified
                     </button>
-                    <button className="text-md ml-4 inline-flex rounded-3xl border-2 border-purple-700 bg-transparent py-2 px-2 text-purple-700">
+                    <button
+                      id={styles.howtobuybody}
+                      className="text-md ml-4 inline-flex rounded-3xl border-2 border-purple-700 bg-transparent py-2 px-2 text-purple-700"
+                    >
                       Learn More
                     </button>
                   </div>
 
-                  <div className="mt-5 flex flex-row">
+                  <div id={styles.howtobuybody} className="mt-5 flex flex-row">
                     This eligibility check won't affect your credit score.
                   </div>
                 </div>
@@ -120,38 +139,57 @@ const HowToBuy = () => {
             <section className="body-font text-gray-600">
               <div className="container mx-auto flex flex-col items-center px-5 py-24 md:flex-row">
                 <div className="mb-16 flex flex-col items-start text-left md:w-1/2 md:pr-16">
-                  <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 sm:text-5xl">
+                  <h1
+                    id={styles.howtobuytitle}
+                    className="title-font mb-4 text-3xl font-bold text-gray-900 sm:text-5xl"
+                  >
                     How to buy with Affirm
                   </h1>
 
                   <div className="flex flex-row items-center">
-                    <h1 className="mr-5">Step 1</h1>
-                    <h1 className="mr-5 underline decoration-purple-700 decoration-2 underline-offset-8">
+                    <h1 id={styles.howtobuybody} className="mr-5">
+                      Step 1
+                    </h1>
+                    <h1
+                      id={styles.howtobuybody}
+                      className="mr-5 underline decoration-purple-700 decoration-2 underline-offset-8"
+                    >
                       Step 2
                     </h1>
-                    <h1 className="mr-5">Step 3</h1>
+                    <h1 id={styles.howtobuybody} className="mr-5">
+                      Step 3
+                    </h1>
                   </div>
 
-                  <h1 className="title-font my-12 text-xl font-medium text-gray-900">
+                  <h1
+                    id={styles.howtobuytitle}
+                    className="title-font my-12 text-xl font-bold text-gray-900"
+                  >
                     Choose your payment terms
                   </h1>
 
-                  <p className="mb-8 leading-relaxed">
+                  <p id={styles.howtobuybody} className="mb-8 leading-relaxed">
                     You’re in control. Pick the payment option that works for
                     you and your budget—from 4 interest-free payments every 2
                     weeks to monthly installments.
                   </p>
 
                   <div className="flex justify-center">
-                    <button className="text-md inline-flex rounded-3xl border-2 border-purple-700 bg-purple-700 py-2 px-2 text-white">
+                    <button
+                      id={styles.howtobuybody}
+                      className="text-md inline-flex rounded-3xl border-2 border-purple-700 bg-purple-700 py-2 px-2 text-white"
+                    >
                       Get Prequalified
                     </button>
-                    <button className="text-md ml-4 inline-flex rounded-3xl border-2 border-purple-700 bg-transparent py-2 px-2 text-purple-700">
+                    <button
+                      id={styles.howtobuybody}
+                      className="text-md ml-4 inline-flex rounded-3xl border-2 border-purple-700 bg-transparent py-2 px-2 text-purple-700"
+                    >
                       Learn More
                     </button>
                   </div>
 
-                  <div className="mt-5 flex flex-row">
+                  <div id={styles.howtobuybody} className="mt-5 flex flex-row">
                     This eligibility check won't affect your credit score.
                   </div>
                 </div>
@@ -173,38 +211,57 @@ const HowToBuy = () => {
             <section className="body-font text-gray-600">
               <div className="container mx-auto flex flex-col items-center px-5 py-24 md:flex-row">
                 <div className="mb-16 flex flex-col items-start text-left md:w-1/2 md:pr-16">
-                  <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 sm:text-5xl">
+                  <h1
+                    id={styles.howtobuytitle}
+                    className="title-font mb-4 text-3xl font-bold text-gray-900 sm:text-5xl"
+                  >
                     How to buy with Affirm
                   </h1>
 
                   <div className="flex flex-row items-center">
-                    <h1 className="mr-5">Step 1</h1>
-                    <h1 className="mr-5">Step 2</h1>
-                    <h1 className="mr-5 underline decoration-purple-700 decoration-2 underline-offset-8">
+                    <h1 id={styles.howtobuybody} className="mr-5">
+                      Step 1
+                    </h1>
+                    <h1 id={styles.howtobuybody} className="mr-5">
+                      Step 2
+                    </h1>
+                    <h1
+                      id={styles.howtobuybody}
+                      className="mr-5 underline decoration-purple-700 decoration-2 underline-offset-8"
+                    >
                       Step 3
                     </h1>
                   </div>
 
-                  <h1 className="title-font my-12 text-3xl font-medium text-gray-900">
+                  <h1
+                    id={styles.howtobuytitle}
+                    className="title-font my-12 text-3xl font-bold text-gray-900"
+                  >
                     Make your payments
                   </h1>
 
-                  <p className="mb-8 leading-relaxed">
+                  <p id={styles.howtobuybody} className="mb-8 leading-relaxed">
                     Manage your payments in the Affirm app or online, and set up
                     AutoPay so you don’t miss a payment. But if you do, you’ll
                     never pay any fees.
                   </p>
 
                   <div className="flex justify-center">
-                    <button className="text-md inline-flex rounded-3xl border-2 border-purple-700 bg-purple-700 py-2 px-2 text-white">
+                    <button
+                      id={styles.howtobuybody}
+                      className="text-md inline-flex rounded-3xl border-2 border-purple-700 bg-purple-700 py-2 px-2 text-white"
+                    >
                       Get Prequalified
                     </button>
-                    <button className="text-md ml-4 inline-flex rounded-3xl border-2 border-purple-700 bg-transparent py-2 px-2 text-purple-700">
+                    <button
+                      id={styles.howtobuybody}
+                      className="text-md ml-4 inline-flex rounded-3xl border-2 border-purple-700 bg-transparent py-2 px-2 text-purple-700"
+                    >
                       Learn More
                     </button>
                   </div>
 
-                  <div className="mt-5 flex flex-row">
+                  <div id={styles.howtobuybody} className="mt-5 flex flex-row">
                     This eligibility check won't affect your credit score.
                   </div>
                 </div>

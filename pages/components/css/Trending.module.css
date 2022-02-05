@@ -101,3 +101,11 @@
   background-size: 120%;
   background-position: center;
 }
+
+#trendingtitle {
+  font-family: "Mangueira";
+}
+
+#trendingbody {
+  font-family: "Calibre";
+}

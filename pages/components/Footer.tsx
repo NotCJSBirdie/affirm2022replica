@@ -3,11 +3,13 @@ import styles from "./css/Footer.module.css";
 const Footer = () => {
   return (
     <div>
-      <footer className="body-font text-black">
+      <footer id={styles.footerbody} className="body-font text-black">
         <div className="my-12 mx-6 flex flex-col items-center border-t-2 border-black py-8 md:mx-16 md:flex-row">
           <div className="flex w-full flex-col items-start md:w-1/2">
             <a className="title-font flex items-center justify-center font-medium text-gray-900 md:justify-start">
-              <span className="text-3xl">AFFIRM</span>
+              <span id={styles.footertitle} className="text-3xl font-bold">
+                AFFIRM
+              </span>
             </a>
 
             <p className="m-0 mt-36 flex flex-row">
@@ -111,85 +113,69 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex w-full flex-col items-end md:w-1/2">
+          <div className="flex w-full flex-col items-end text-xl md:w-1/2">
             <div className="my-6 flex w-full flex-col md:m-0 md:flex-row">
               <div className="w-full ">
-                <h2 className="title-font mb-3 text-sm font-medium tracking-widest text-gray-900">
-                  Consumers
+                <h2 className="title-font mb-3 font-bold tracking-widest text-black">
+                  CONSUMERS
                 </h2>
                 <nav className="mb-10 list-none">
                   <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      How it works
-                    </a>
+                    <a className="text-black">How it works</a>
                   </li>
                   <li>
-                    <a className="text-gray-600 hover:text-gray-800">Debit+</a>
+                    <a className="text-black">Debit+</a>
                   </li>
                   <li>
-                    <a className="text-gray-600 hover:text-gray-800">Savings</a>
+                    <a className="text-black">Savings</a>
                   </li>
                   <li>
-                    <a className="text-gray-600 hover:text-gray-800">Help</a>
+                    <a className="text-black">Help</a>
                   </li>
                 </nav>
               </div>
 
               <div className="w-full">
-                <h2 className="title-font mb-3 text-sm font-medium tracking-widest text-gray-900">
-                  Businesses
+                <h2 className="title-font mb-3 font-bold tracking-widest text-black">
+                  BUSINESSES
                 </h2>
                 <nav className="mb-10 list-none">
                   <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      Get started
-                    </a>
+                    <a className="text-black">Get started</a>
                   </li>
                   <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      Solutions
-                    </a>
+                    <a className="text-black">Solutions</a>
                   </li>
                   <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      For developers
-                    </a>
+                    <a className="text-black">For developers</a>
                   </li>
                 </nav>
               </div>
 
               <div className="w-full">
-                <h2 className="title-font mb-3 text-sm font-medium tracking-widest text-gray-900">
-                  About Affirm
+                <h2 className="title-font mb-3 font-bold tracking-widest text-black">
+                  ABOUT AFFIRM
                 </h2>
                 <nav className="mb-10 list-none">
                   <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      About us
-                    </a>
+                    <a className="text-black">About us</a>
                   </li>
                   <li>
-                    <a className="text-gray-600 hover:text-gray-800">Careers</a>
+                    <a className="text-black">Careers</a>
                   </li>
                   <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      Investors
-                    </a>
+                    <a className="text-black">Investors</a>
                   </li>
                   <li>
-                    <a className="text-gray-600 hover:text-gray-800">Press</a>
+                    <a className="text-black">Press</a>
                   </li>
 
                   <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      Affirm Cares
-                    </a>
+                    <a className="text-black">Affirm Cares</a>
                   </li>
 
                   <li>
-                    <a className="text-gray-600 hover:text-gray-800">
-                      Diversity & inclusion
-                    </a>
+                    <a className="text-black">Diversity & inclusion</a>
                   </li>
                 </nav>
               </div>
@@ -211,7 +197,7 @@ const Footer = () => {
             60DBO-111681.
           </div>
 
-          <div className="flex flex-col items-start md:flex-row md:items-center">
+          <div className="mb-24 flex flex-col items-start md:flex-row md:items-center">
             <p className="mb-5 md:mr-5">Privacy</p>
 
             <p className="mb-5 md:mr-5">Do not sell my info</p>
