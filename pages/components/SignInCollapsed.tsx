@@ -13,8 +13,11 @@ const SignInCollapsed = () => {
         className="title-font flex  flex-row items-center font-medium text-black  active:transition-transform md:mb-0"
         onClick={() => setArrow(!arrow)}
       >
-        <button className="flex flex-row" {...getToggleProps()}>
-          <span className="text-3xl">Sign In</span>
+        <button
+          className="flex w-full flex-row items-center justify-between"
+          {...getToggleProps()}
+        >
+          <span className="text-xl">Sign In</span>
           <div>
             {arrow ? (
               <svg
@@ -53,12 +56,31 @@ const SignInCollapsed = () => {
         </button>
       </div>
 
-      <div className="px-5 ">
+      <div className="px-5 py-2">
         <section {...getCollapseProps()}>
-          <h1 id={styles.reactcollapse}>Pieces</h1>
-          <h1 id={styles.reactcollapse}>Designers</h1>
-          <h1 id={styles.reactcollapse}>About</h1>
-          <h1 id={styles.reactcollapse}>Contact</h1>
+          <div className="my-4">
+            <button className="w-full rounded-3xl border-2 border-purple-700 bg-purple-700 py-2 px-6 text-white ">
+              Sign In
+            </button>
+          </div>
+
+          <div className="my-4">
+            <h1 className="w-full text-center text-purple-700">
+              Create Account
+            </h1>
+          </div>
+
+          <div className="my-4">
+            <button className="w-full rounded-3xl border-2 border-purple-700 bg-white py-2 px-6 text-purple-700 ">
+              Business sign in
+            </button>
+          </div>
+
+          <div className="my-4">
+            <h1 className="w-full text-center text-purple-700">
+              Business sign up
+            </h1>
+          </div>
         </section>
       </div>
     </div>

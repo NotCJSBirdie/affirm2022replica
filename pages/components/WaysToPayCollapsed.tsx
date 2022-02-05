@@ -13,8 +13,11 @@ const WaysToPayCollapsed = () => {
         className="title-font flex flex-row items-center font-medium text-black  active:transition-transform"
         onClick={() => setArrow(!arrow)}
       >
-        <button className="flex flex-row" {...getToggleProps()}>
-          <span className="text-3xl">Ways To Pay</span>
+        <button
+          className="flex w-full flex-row items-center justify-between"
+          {...getToggleProps()}
+        >
+          <span className="text-xl">Ways To Pay</span>
           <div>
             {arrow ? (
               <svg
@@ -53,12 +56,20 @@ const WaysToPayCollapsed = () => {
         </button>
       </div>
 
-      <div className="px-5 py-2">
+      <div className="py-2">
         <section {...getCollapseProps()}>
-          <h1 id={styles.reactcollapse}>Pieces</h1>
-          <h1 id={styles.reactcollapse}>Designers</h1>
-          <h1 id={styles.reactcollapse}>About</h1>
-          <h1 id={styles.reactcollapse}>Contact</h1>
+          <h1 className="text-gray-400">PAYING WITH AFFIRM</h1>
+
+          <p className="my-2 text-lg">How it works</p>
+          <p className="mb-2 text-lg">Debit+NEW</p>
+          <p className="mb-2 text-lg">Why Affirm?</p>
+          <p className="mb-2 text-lg">Help Center</p>
+          <div className="my-5 ">
+            <img
+              src="https://images.ctfassets.net/4rc1asww3mw7/6xTWwf59EaarFomi8fJEQd/841ea728dd6f317120954f6085eb4095/Featured_content_Large_Debit_.jpg?w=768&h=492&q=75&fm=webp"
+              alt="waystopaysidebar"
+            />
+          </div>
         </section>
       </div>
     </div>

@@ -13,8 +13,11 @@ const EarnCollapsed = () => {
         className="title-font flex  flex-row items-center font-medium text-black  active:transition-transform md:mb-0"
         onClick={() => setArrow(!arrow)}
       >
-        <button className="flex flex-row" {...getToggleProps()}>
-          <span className="text-3xl">Earn</span>
+        <button
+          className="flex w-full flex-row items-center justify-between"
+          {...getToggleProps()}
+        >
+          <span className="text-xl">Earn</span>
           <div>
             {arrow ? (
               <svg
@@ -53,12 +56,12 @@ const EarnCollapsed = () => {
         </button>
       </div>
 
-      <div className="px-5 ">
+      <div className="py-2">
         <section {...getCollapseProps()}>
-          <h1 id={styles.reactcollapse}>Pieces</h1>
-          <h1 id={styles.reactcollapse}>Designers</h1>
-          <h1 id={styles.reactcollapse}>About</h1>
-          <h1 id={styles.reactcollapse}>Contact</h1>
+          <h1 className="text-gray-400">WAYS TO EARN</h1>
+          <p className="my-2 text-lg">Affirm Savings</p>
+          <p className="mb-2 text-lg">Refer a friend</p>
+          <p className="mb-2 text-lg">Help Center</p>
         </section>
       </div>
     </div>

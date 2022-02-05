@@ -574,7 +574,7 @@ const Header = () => {
           </div>
         ) : (
           <div className="relative top-20 flex h-full flex-row">
-            <div className="flex w-1/3 flex-col items-start">
+            <div className="flex w-2/3 flex-col items-start">
               <div className=" fixed flex h-full flex-col bg-gray-500 px-72 py-4 opacity-25">
                 <button className="invisible rounded-lg bg-white px-4 py-2">
                   CLOSE THE SIDEBAR
@@ -590,11 +590,11 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="flex w-2/3 flex-col items-end">
-              <div className=" fixed flex h-full flex-col bg-white px-8  py-4 text-black">
+            <div className="flex w-full flex-col items-end">
+              <div className="fixed flex h-full flex-col overflow-y-scroll bg-white px-8 py-4 text-black">
                 <button
                   onClick={() => setSideBar(!sidebar)}
-                  className=" self-end rounded-lg px-4 py-2"
+                  className="self-end rounded-lg py-8 pl-4"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
