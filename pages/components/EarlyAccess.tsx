@@ -13,16 +13,22 @@ const EarlyAccess = () => {
             />
           </div>
           <div className="flex flex-col  items-center text-center md:w-1/3 md:items-start md:pl-16 md:text-left lg:flex-grow lg:pl-24">
-            <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 sm:text-4xl">
-              Get early access to Debit+
+            <h1
+              id={styles.earlyaccesstitle}
+              className="title-font mb-4 text-3xl font-bold text-gray-900 sm:text-4xl"
+            >
+              Get early access to Debit
             </h1>
-            <p className="mb-8 leading-relaxed">
+            <p id={styles.earlyaccessbody} className="mb-8 leading-relaxed">
               Use the Affirm Debit+™ card for everyday shopping. Or choose to
               split eligible purchases at 0% APR in the Debit+ app. Join the
               waitlist to save your spot in line.
             </p>
             <div className="flex justify-center">
-              <button className="inline-flex rounded-full border-0 bg-indigo-500 py-2 px-6 text-lg text-white hover:bg-indigo-600 focus:outline-none">
+              <button
+                id={styles.earlyaccessbody}
+                className="inline-flex rounded-full border-2 border-purple-700 bg-purple-700 py-2 px-6 text-lg text-white"
+              >
                 Join the waitlist
               </button>
             </div>

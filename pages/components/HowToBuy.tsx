@@ -66,13 +66,15 @@ const HowToBuy = () => {
           <p id={styles.slide1} className="px-16 py-5">
             <section className="body-font text-gray-600">
               <div className="container mx-auto flex flex-col items-center px-5 py-24 md:flex-row">
-                <div className="mb-16 flex flex-col items-center text-center md:mb-0 md:w-1/2 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24">
+                <div className="mb-16 flex flex-col items-start text-left md:w-1/2 md:pr-16">
                   <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 sm:text-5xl">
                     How to buy with Affirm
                   </h1>
 
                   <div className="flex flex-row items-center">
-                    <h1 className="mr-5">Step 1</h1>
+                    <h1 className="mr-5 underline decoration-purple-700 decoration-2 underline-offset-8">
+                      Step 1
+                    </h1>
                     <h1 className="mr-5">Step 2</h1>
                     <h1 className="mr-5">Step 3</h1>
                   </div>
@@ -88,10 +90,10 @@ const HowToBuy = () => {
                   </p>
 
                   <div className="flex justify-center">
-                    <button className="inline-flex rounded border-0 bg-indigo-500 py-2 px-6 text-lg text-white hover:bg-indigo-600 focus:outline-none">
+                    <button className="text-md inline-flex rounded-3xl border-2 border-purple-700 bg-purple-700 py-2 px-2 text-white">
                       Get Prequalified
                     </button>
-                    <button className="ml-4 inline-flex rounded border-0 bg-gray-100 py-2 px-6 text-lg text-gray-700 hover:bg-gray-200 focus:outline-none">
+                    <button className="text-md ml-4 inline-flex rounded-3xl border-2 border-purple-700 bg-transparent py-2 px-2 text-purple-700">
                       Learn More
                     </button>
                   </div>
@@ -117,18 +119,20 @@ const HowToBuy = () => {
           <p id={styles.slide1} className="px-16 py-5">
             <section className="body-font text-gray-600">
               <div className="container mx-auto flex flex-col items-center px-5 py-24 md:flex-row">
-                <div className="mb-16 flex flex-col items-center text-center md:mb-0 md:w-1/2 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24">
+                <div className="mb-16 flex flex-col items-start text-left md:w-1/2 md:pr-16">
                   <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 sm:text-5xl">
                     How to buy with Affirm
                   </h1>
 
                   <div className="flex flex-row items-center">
                     <h1 className="mr-5">Step 1</h1>
-                    <h1 className="mr-5">Step 2</h1>
+                    <h1 className="mr-5 underline decoration-purple-700 decoration-2 underline-offset-8">
+                      Step 2
+                    </h1>
                     <h1 className="mr-5">Step 3</h1>
                   </div>
 
-                  <h1 className="title-font my-12 text-3xl font-medium text-gray-900">
+                  <h1 className="title-font my-12 text-xl font-medium text-gray-900">
                     Choose your payment terms
                   </h1>
 
@@ -139,10 +143,10 @@ const HowToBuy = () => {
                   </p>
 
                   <div className="flex justify-center">
-                    <button className="inline-flex rounded border-0 bg-indigo-500 py-2 px-6 text-lg text-white hover:bg-indigo-600 focus:outline-none">
+                    <button className="text-md inline-flex rounded-3xl border-2 border-purple-700 bg-purple-700 py-2 px-2 text-white">
                       Get Prequalified
                     </button>
-                    <button className="ml-4 inline-flex rounded border-0 bg-gray-100 py-2 px-6 text-lg text-gray-700 hover:bg-gray-200 focus:outline-none">
+                    <button className="text-md ml-4 inline-flex rounded-3xl border-2 border-purple-700 bg-transparent py-2 px-2 text-purple-700">
                       Learn More
                     </button>
                   </div>
@@ -168,7 +172,7 @@ const HowToBuy = () => {
           <p id={styles.slide1} className="px-16 py-5">
             <section className="body-font text-gray-600">
               <div className="container mx-auto flex flex-col items-center px-5 py-24 md:flex-row">
-                <div className="mb-16 flex flex-col items-center text-center md:mb-0 md:w-1/2 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24">
+                <div className="mb-16 flex flex-col items-start text-left md:w-1/2 md:pr-16">
                   <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 sm:text-5xl">
                     How to buy with Affirm
                   </h1>
@@ -176,7 +180,9 @@ const HowToBuy = () => {
                   <div className="flex flex-row items-center">
                     <h1 className="mr-5">Step 1</h1>
                     <h1 className="mr-5">Step 2</h1>
-                    <h1 className="mr-5">Step 3</h1>
+                    <h1 className="mr-5 underline decoration-purple-700 decoration-2 underline-offset-8">
+                      Step 3
+                    </h1>
                   </div>
 
                   <h1 className="title-font my-12 text-3xl font-medium text-gray-900">
@@ -190,10 +196,10 @@ const HowToBuy = () => {
                   </p>
 
                   <div className="flex justify-center">
-                    <button className="inline-flex rounded border-0 bg-indigo-500 py-2 px-6 text-lg text-white hover:bg-indigo-600 focus:outline-none">
+                    <button className="text-md inline-flex rounded-3xl border-2 border-purple-700 bg-purple-700 py-2 px-2 text-white">
                       Get Prequalified
                     </button>
-                    <button className="ml-4 inline-flex rounded border-0 bg-gray-100 py-2 px-6 text-lg text-gray-700 hover:bg-gray-200 focus:outline-none">
+                    <button className="text-md ml-4 inline-flex rounded-3xl border-2 border-purple-700 bg-transparent py-2 px-2 text-purple-700">
                       Learn More
                     </button>
                   </div>

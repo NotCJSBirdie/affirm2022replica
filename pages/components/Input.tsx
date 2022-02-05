@@ -2,11 +2,14 @@ import styles from "./css/Input.module.css";
 
 const Input = () => {
   return (
-    <div className="relative bottom-24 w-full py-12 px-12 md:w-1/2">
+    <div className="relative bottom-24 w-full  px-5 pt-12  md:w-1/2 md:py-12 md:px-12">
       <div className="flex flex-row items-center rounded-full bg-white py-5 shadow-2xl">
         <div className="ml-8 flex w-11/12 flex-col">
-          <span className="w-full">Stores</span>
+          <span id={styles.inputtitle} className="w-full font-extrabold">
+            STORES
+          </span>
           <input
+            id={styles.inputbody}
             placeholder="Where are you shopping?"
             className="w-full outline-none"
           ></input>

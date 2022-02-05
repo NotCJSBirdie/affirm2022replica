@@ -1,10 +1,13 @@
 import styles from "./css/Choose.module.css";
-import Image from "next/image";
-import { useState } from "react";
 
 const Choose = () => {
   return (
     <div className="py-24  px-4 md:px-12">
+      <div className="my-4 w-full text-center">
+        <h1 id={styles.choosetitle} className="text-6xl font-bold">
+          Just choose Affirm at checkout
+        </h1>
+      </div>
       <div className="grid-rows-9 grid grid-cols-1 gap-1 md:grid-cols-4 md:grid-rows-3">
         <div className="col-span-1 row-span-1 flex flex-col items-start overflow-hidden p-4 md:col-span-2 md:row-span-2">
           <div
@@ -18,7 +21,9 @@ const Choose = () => {
             />
           </div>
 
-          <h1 className="my-2">Wallmart.com</h1>
+          <h1 id={styles.choosebody} className="my-2">
+            Wallmart.com
+          </h1>
         </div>
 
         <div className="col-span-1 row-span-1 flex flex-col items-start p-4">
@@ -32,7 +37,9 @@ const Choose = () => {
             />
           </div>
 
-          <h1 className="my-2">Peloton E-commerce</h1>
+          <h1 id={styles.choosebody} className="my-2">
+            Peloton E-commerce
+          </h1>
         </div>
 
         <div className="col-span-1 row-span-1 flex flex-col items-start p-4">
@@ -46,7 +53,9 @@ const Choose = () => {
             />
           </div>
 
-          <h1 className="my-2">Amazon</h1>
+          <h1 id={styles.choosebody} className="my-2">
+            Amazon
+          </h1>
         </div>
 
         <div className="col-span-1 row-span-1 flex flex-col items-start p-4">
@@ -60,7 +69,9 @@ const Choose = () => {
             />
           </div>
 
-          <h1 className="my-2">Expedia Hotels & Vacation Packages</h1>
+          <h1 id={styles.choosebody} className="my-2">
+            Expedia Hotels & Vacation Packages
+          </h1>
         </div>
 
         <div className="col-span-1 row-span-1 flex flex-col items-start p-4">
@@ -74,7 +85,9 @@ const Choose = () => {
             />
           </div>
 
-          <h1 className="my-2">Pottery Barn</h1>
+          <h1 id={styles.choosebody} className="my-2">
+            Pottery Barn
+          </h1>
         </div>
 
         <div className="col-span-1 row-span-1 flex flex-col items-start p-4">
@@ -88,7 +101,9 @@ const Choose = () => {
             />
           </div>
 
-          <h1 className="my-2">The RealReal</h1>
+          <h1 id={styles.choosebody} className="my-2">
+            The RealReal
+          </h1>
         </div>
 
         <div className="col-span-1 row-span-1 flex flex-col items-start p-4">
@@ -102,7 +117,9 @@ const Choose = () => {
             />
           </div>
 
-          <h1 className="my-2">Neiman Marcus</h1>
+          <h1 id={styles.choosebody} className="my-2">
+            Neiman Marcus
+          </h1>
         </div>
 
         <div className="col-span-1 row-span-1 flex flex-col items-start p-4">
@@ -116,7 +133,9 @@ const Choose = () => {
             />
           </div>
 
-          <h1 className="my-2">Target</h1>
+          <h1 id={styles.choosebody} className="my-2">
+            Target
+          </h1>
         </div>
 
         <div className="col-span-1 row-span-1 flex flex-col items-start p-4">
@@ -130,7 +149,9 @@ const Choose = () => {
             />
           </div>
 
-          <h1 className="my-2">Lowe's</h1>
+          <h1 id={styles.choosebody} className="my-2">
+            Lowe's
+          </h1>
         </div>
       </div>
     </div>

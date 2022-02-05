@@ -17,7 +17,7 @@ const WaysToPayCollapsed = () => {
           className="flex w-full flex-row items-center justify-between"
           {...getToggleProps()}
         >
-          <span className="text-xl">Ways To Pay</span>
+          <span className="text-xl font-bold">Ways To Pay</span>
           <div>
             {arrow ? (
               <svg

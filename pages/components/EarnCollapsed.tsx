@@ -17,7 +17,7 @@ const EarnCollapsed = () => {
           className="flex w-full flex-row items-center justify-between"
           {...getToggleProps()}
         >
-          <span className="text-xl">Earn</span>
+          <span className="text-xl font-bold">Earn</span>
           <div>
             {arrow ? (
               <svg

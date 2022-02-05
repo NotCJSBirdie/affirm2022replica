@@ -24,10 +24,12 @@ const Header = () => {
 
   const [navbar, setNavbar] = useState(
     <div className="fixed top-0 z-10 w-full bg-transparent">
-      <header className="body-font sticky z-50 hidden text-gray-600 lg:grid">
+      <header className="body-font sticky z-50 hidden text-black lg:grid">
         <div className="container mx-auto grid grid-cols-3 items-center bg-transparent px-12">
-          <a className="title-font mb-4 flex items-center px-8 font-medium text-gray-900 md:mb-0">
-            <span className="pr-8 text-3xl">AFFIRM</span>
+          <a className="title-font mb-4 flex items-center px-8 font-medium text-black md:mb-0">
+            <span className="pr-8 text-3xl font-bold" id={styles.headertitle}>
+              AFFIRM
+            </span>
           </a>
 
           <div className="col-span-2 flex flex-col items-end border-0 px-3 focus:outline-none md:mt-0">
@@ -35,8 +37,8 @@ const Header = () => {
               <a
                 onMouseOver={() => setShop(!shop)}
                 onMouseOut={() => setShop(!shop)}
-                id={styles.underline}
-                className=" bg-transparent p-6 hover:text-gray-900"
+                id={styles.headersection}
+                className=" bg-transparent p-6"
               >
                 Shop
               </a>
@@ -44,7 +46,7 @@ const Header = () => {
               <a
                 onMouseOver={() => setWaysToPay(!waystopay)}
                 onMouseOut={() => setWaysToPay(!waystopay)}
-                id={styles.underline}
+                id={styles.headersection}
                 className=" bg-transparent p-6 hover:text-gray-900"
               >
                 Ways to pay
@@ -53,7 +55,7 @@ const Header = () => {
               <a
                 onMouseOver={() => setEarn(!earn)}
                 onMouseOut={() => setEarn(!earn)}
-                id={styles.underline}
+                id={styles.headersection}
                 className=" bg-transparent p-6 hover:text-gray-900"
               >
                 Earn
@@ -62,7 +64,7 @@ const Header = () => {
               <a
                 onMouseOver={() => setBusiness(!business)}
                 onMouseOut={() => setBusiness(!business)}
-                id={styles.underline}
+                id={styles.headersection}
                 className="bg-transparent p-6 hover:text-gray-900"
               >
                 For business
@@ -71,14 +73,14 @@ const Header = () => {
               <a
                 onMouseOver={() => setSignIn(!signin)}
                 onMouseOut={() => setSignIn(!signin)}
-                id={styles.underline}
+                id={styles.headersection}
                 className="bg-transparent p-6 hover:text-gray-900"
               >
                 Sign In
               </a>
 
               <a
-                id={styles.underline}
+                id={styles.headersection}
                 className=" bg-transparent p-6 hover:text-gray-900"
               >
                 Download App
@@ -94,10 +96,15 @@ const Header = () => {
     if (window.scrollY > 100) {
       setNavbar(
         <div className="fixed top-0 z-10 w-full bg-white shadow-2xl">
-          <header className="body-font z-50 hidden text-gray-600 lg:grid ">
+          <header className="body-font z-50 hidden text-black lg:grid ">
             <div className="container mx-auto grid grid-cols-3 items-center bg-transparent px-12 ">
-              <a className="title-font mb-4 flex items-center px-8 font-medium text-gray-900 md:mb-0">
-                <span className="pr-8 text-3xl">AFFIRM</span>
+              <a className="title-font mb-4 flex items-center px-8 font-medium text-black md:mb-0">
+                <span
+                  className="pr-8 text-3xl font-bold"
+                  id={styles.headertitle}
+                >
+                  AFFIRM
+                </span>
               </a>
 
               <div className="col-span-2 flex flex-col items-end border-0 px-3 focus:outline-none md:mt-0">
@@ -105,8 +112,8 @@ const Header = () => {
                   <a
                     onMouseOver={() => setShop(!shop)}
                     onMouseOut={() => setShop(!shop)}
-                    id={styles.underline}
-                    className=" bg-transparent p-6 hover:text-gray-900"
+                    id={styles.headersection}
+                    className=" bg-transparent p-6 font-bold "
                   >
                     Shop
                   </a>
@@ -114,8 +121,8 @@ const Header = () => {
                   <a
                     onMouseOver={() => setWaysToPay(!waystopay)}
                     onMouseOut={() => setWaysToPay(!waystopay)}
-                    id={styles.underline}
-                    className=" bg-transparent p-6 hover:text-gray-900"
+                    id={styles.headersection}
+                    className=" bg-transparent p-6  font-bold "
                   >
                     Ways to pay
                   </a>
@@ -123,8 +130,8 @@ const Header = () => {
                   <a
                     onMouseOver={() => setEarn(!earn)}
                     onMouseOut={() => setEarn(!earn)}
-                    id={styles.underline}
-                    className=" bg-transparent p-6 hover:text-gray-900"
+                    id={styles.headersection}
+                    className=" bg-transparent p-6 font-bold "
                   >
                     Earn
                   </a>
@@ -132,8 +139,8 @@ const Header = () => {
                   <a
                     onMouseOver={() => setBusiness(!business)}
                     onMouseOut={() => setBusiness(!business)}
-                    id={styles.underline}
-                    className="bg-transparent p-6 hover:text-gray-900"
+                    id={styles.headersection}
+                    className="bg-transparent p-6 font-bold "
                   >
                     For business
                   </a>
@@ -141,15 +148,15 @@ const Header = () => {
                   <a
                     onMouseOver={() => setSignIn(!signin)}
                     onMouseOut={() => setSignIn(!signin)}
-                    id={styles.underline}
-                    className="bg-transparent p-6 hover:text-gray-900"
+                    id={styles.headersection}
+                    className="bg-transparent p-6 font-bold text-purple-700"
                   >
                     Sign In
                   </a>
 
                   <a
-                    id={styles.underline}
-                    className=" bg-transparent p-6 hover:text-gray-900"
+                    id={styles.headersection}
+                    className=" bg-transparent p-6 font-bold text-purple-700"
                   >
                     Download App
                   </a>
@@ -162,10 +169,15 @@ const Header = () => {
     } else {
       setNavbar(
         <div className="fixed top-0 z-10 w-full bg-transparent">
-          <header className="body-font sticky z-50 hidden text-gray-600 lg:grid">
+          <header className="body-font sticky z-50 hidden text-black lg:grid">
             <div className="container mx-auto grid grid-cols-3 items-center bg-transparent px-12">
-              <a className="title-font mb-4 flex items-center px-8 font-medium text-gray-900 md:mb-0">
-                <span className="pr-8 text-3xl">AFFIRM</span>
+              <a className="title-font mb-4 flex items-center px-8 font-medium text-black md:mb-0">
+                <span
+                  className="pr-8 text-3xl font-extrabold"
+                  id={styles.headertitle}
+                >
+                  AFFIRM
+                </span>
               </a>
 
               <div className="col-span-2 flex flex-col items-end border-0 px-3 focus:outline-none md:mt-0">
@@ -173,8 +185,8 @@ const Header = () => {
                   <a
                     onMouseOver={() => setShop(!shop)}
                     onMouseOut={() => setShop(!shop)}
-                    id={styles.underline}
-                    className=" bg-transparent p-6 hover:text-gray-900"
+                    id={styles.headersection}
+                    className=" bg-transparent p-6 font-bold "
                   >
                     Shop
                   </a>
@@ -182,8 +194,8 @@ const Header = () => {
                   <a
                     onMouseOver={() => setWaysToPay(!waystopay)}
                     onMouseOut={() => setWaysToPay(!waystopay)}
-                    id={styles.underline}
-                    className=" bg-transparent p-6 hover:text-gray-900"
+                    id={styles.headersection}
+                    className=" bg-transparent p-6 font-bold "
                   >
                     Ways to pay
                   </a>
@@ -191,8 +203,8 @@ const Header = () => {
                   <a
                     onMouseOver={() => setEarn(!earn)}
                     onMouseOut={() => setEarn(!earn)}
-                    id={styles.underline}
-                    className=" bg-transparent p-6 hover:text-gray-900"
+                    id={styles.headersection}
+                    className=" bg-transparent p-6 font-bold "
                   >
                     Earn
                   </a>
@@ -200,8 +212,8 @@ const Header = () => {
                   <a
                     onMouseOver={() => setBusiness(!business)}
                     onMouseOut={() => setBusiness(!business)}
-                    id={styles.underline}
-                    className="bg-transparent p-6 hover:text-gray-900"
+                    id={styles.headersection}
+                    className="bg-transparent p-6 font-bold "
                   >
                     For business
                   </a>
@@ -209,15 +221,15 @@ const Header = () => {
                   <a
                     onMouseOver={() => setSignIn(!signin)}
                     onMouseOut={() => setSignIn(!signin)}
-                    id={styles.underline}
-                    className="bg-transparent p-6 hover:text-gray-900"
+                    id={styles.headersection}
+                    className="bg-transparent p-6 font-bold text-purple-700"
                   >
                     Sign In
                   </a>
 
                   <a
-                    id={styles.underline}
-                    className=" bg-transparent p-6 hover:text-gray-900"
+                    id={styles.headersection}
+                    className=" bg-transparent p-6 font-bold text-purple-700"
                   >
                     Download App
                   </a>
@@ -235,9 +247,14 @@ const Header = () => {
       <header className="body-font text-gray-600 lg:hidden">
         <div className="container mx-auto flex flex-row items-center justify-between p-5">
           <a className="title-font flex items-center font-medium text-gray-900 md:mb-0">
-            <span className="text-3xl">AFFIRM</span>
+            <span className="text-3xl" id={styles.headertitle}>
+              AFFIRM
+            </span>
           </a>
           <div>
+            <div>
+              <h1 className="text-purple-700">Sign in</h1>
+            </div>
             <button
               onClick={() => setSideBar(!sidebar)}
               className="inline-flex items-center rounded bg-transparent text-base md:mt-0"
@@ -273,9 +290,35 @@ const Header = () => {
           <header className="body-font bg-white text-gray-600 lg:hidden">
             <div className="container mx-auto flex flex-row items-center justify-between p-5">
               <a className="title-font flex items-center font-medium text-gray-900 md:mb-0">
-                <span className="text-3xl">AFFIRM</span>
+                <span className="text-3xl font-bold" id={styles.headertitle}>
+                  AFFIRM
+                </span>
               </a>
-              <div>
+              <div className="flex flex-row">
+                <div className="flex flex-row items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="icon icon-tabler icon-tabler-user mr-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#6f32be"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="7" r="4" />
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                  </svg>
+                  <h1
+                    id={styles.headersections}
+                    className="mr-6 text-xl font-bold text-purple-700"
+                  >
+                    Sign in
+                  </h1>
+                </div>
                 <button
                   onClick={() => setSideBar(!sidebar)}
                   className="inline-flex items-center rounded bg-transparent text-base md:mt-0"
@@ -309,9 +352,35 @@ const Header = () => {
           <header className="body-font text-gray-600 lg:hidden">
             <div className="container mx-auto flex flex-row items-center justify-between p-5">
               <a className="title-font flex items-center font-medium text-gray-900 md:mb-0">
-                <span className="text-3xl">AFFIRM</span>
+                <span className="text-3xl font-bold" id={styles.headertitle}>
+                  AFFIRM
+                </span>
               </a>
-              <div>
+              <div className="flex flex-row">
+                <div className="flex flex-row items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="icon icon-tabler icon-tabler-user mr-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#6f32be"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="7" r="4" />
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                  </svg>
+                  <h1
+                    id={styles.headersections}
+                    className="mr-6 text-xl font-bold text-purple-700"
+                  >
+                    Sign in
+                  </h1>
+                </div>
                 <button
                   onClick={() => setSideBar(!sidebar)}
                   className="inline-flex items-center rounded bg-transparent text-base md:mt-0"
@@ -393,26 +462,68 @@ const Header = () => {
             className="fixed top-16 z-10 mx-56 mb-16 grid grid-cols-3 bg-white p-8 shadow-2xl"
           >
             <div className="flex flex-col items-start">
-              <h1>Where to shop</h1>
-              <h2>Accessories</h2>
-              <h2>Apparel</h2>
-              <h2>Auto</h2>
-              <h2>Beauty and Health</h2>
-              <h2>Black-owned businesses</h2>
-              <h2>Electronics</h2>
-              <h2>Fitness & gear</h2>
-              <h2>Home and furniture</h2>
-              <h2>Luxury</h2>
-              <h2>Shoes</h2>
-              <h2>Travel</h2>
-              <h2>Wedding</h2>
+              <h1
+                id={styles.headercontent}
+                className="mb-2 font-bold text-gray-400"
+              >
+                WHERE TO SHOP
+              </h1>
+
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                Accessories
+              </h2>
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                Apparel
+              </h2>
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                Auto
+              </h2>
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                Beauty and Health
+              </h2>
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                Black-owned businesses
+              </h2>
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                Electronics
+              </h2>
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                Fitness & gear
+              </h2>
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                Home and furniture
+              </h2>
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                Luxury
+              </h2>
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                Shoes
+              </h2>
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                Travel
+              </h2>
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                Wedding
+              </h2>
             </div>
 
             <div className="flex flex-col items-start">
-              <h1>Shopping with Affirm</h1>
-              <h2>How it works</h2>
-              <h2>Download the app</h2>
-              <h2>Help Center</h2>
+              <h1
+                id={styles.headercontent}
+                className="mb-2 font-bold text-gray-400"
+              >
+                SHOPPING WITH AFFIRM
+              </h1>
+
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                How it works
+              </h2>
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                Download the app
+              </h2>
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                Help Center
+              </h2>
             </div>
 
             <div className="flex flex-col items-start">
@@ -438,11 +549,25 @@ const Header = () => {
             className=" fixed top-16  z-10 mx-72 mb-16 grid grid-cols-2 bg-white p-8 shadow-2xl"
           >
             <div className="flex flex-col items-start ">
-              <h1>Paying with affirm</h1>
-              <h2>How it works</h2>
-              <h2>Debit + NEW</h2>
-              <h2>Why Affirm?</h2>
-              <h2>Help Center</h2>
+              <h1
+                id={styles.headercontent}
+                className="mb-2 font-bold text-gray-400"
+              >
+                PAYING WITH AFFIRM
+              </h1>
+
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                How it works
+              </h2>
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                Debit + NEW
+              </h2>
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                Why Affirm?
+              </h2>
+              <h2 id={styles.headercontent} className="mb-2 text-lg">
+                Help Center
+              </h2>
             </div>
 
             <div className="flex flex-col items-start ">
@@ -467,13 +592,24 @@ const Header = () => {
             onMouseLeave={() => setEarn(!earn)}
             className="mr-12 flex flex-col items-end "
           >
-            <div className="fixed top-16 z-10  mb-16 grid w-1/2 grid-cols-1 bg-white  p-8 shadow-2xl">
+            <div className="fixed top-16 right-48 z-10  mb-16 grid w-1/3 grid-cols-1 bg-white  p-8 shadow-2xl">
               <div className="flex flex-col items-start">
-                <h1>Paying with affirm</h1>
-                <h2>How it works</h2>
-                <h2>Debit + NEW</h2>
-                <h2>Why Affirm?</h2>
-                <h2>Help Center</h2>
+                <h1
+                  id={styles.headercontent}
+                  className="mb-2 font-bold text-gray-400"
+                >
+                  WAYS TO EARN
+                </h1>
+
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  Affirm Savings
+                </h2>
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  Refer a friend
+                </h2>
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  Help Center
+                </h2>
               </div>
             </div>
           </div>
@@ -496,35 +632,88 @@ const Header = () => {
           >
             <div className="fixed top-16 z-10  mx-12 mb-16 grid grid-cols-4 gap-x-4 bg-white  p-8 shadow-2xl">
               <div className="flex flex-col items-start">
-                <h1>Industries</h1>
-                <h2>Home & Lifestyle</h2>
-                <h2>Fashion</h2>
-                <h2>Auto</h2>
-                <h2>Fitness & Sporting Goods</h2>
-                <h2>Travel</h2>
-                <h2>Other</h2>
+                <h1
+                  id={styles.headercontent}
+                  className="mb-2 font-bold text-gray-400"
+                >
+                  Industries
+                </h1>
+
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  Home & Lifestyle
+                </h2>
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  Fashion
+                </h2>
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  Auto
+                </h2>
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  Fitness & Sporting Goods
+                </h2>
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  Travel
+                </h2>
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  Other
+                </h2>
               </div>
 
               <div className="flex flex-col items-start">
-                <h1>Solutions</h1>
-                <h2>Overview</h2>
-                <h2>Increase Awareness</h2>
-                <h2>Increase Consideration</h2>
-                <h2>Increase Conversion</h2>
-                <h2>Increase Omnichannel</h2>
+                <h1
+                  id={styles.headercontent}
+                  className="mb-2 font-bold text-gray-400"
+                >
+                  Solutions
+                </h1>
+
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  Overview
+                </h2>
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  Increase Awareness
+                </h2>
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  Increase Consideration
+                </h2>
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  Increase Conversion
+                </h2>
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  Increase Omnichannel
+                </h2>
               </div>
 
               <div className="flex flex-col items-start">
-                <h1>Resources</h1>
-                <h2>Marketing Toolkit</h2>
-                <h2>For developers</h2>
-                <h2>Blog</h2>
-                <h2>Partnerships</h2>
-                <h2>FAQs</h2>
+                <h1
+                  id={styles.headercontent}
+                  className="mb-2 font-bold text-gray-400"
+                >
+                  Resources
+                </h1>
+
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  Marketing Toolkit
+                </h2>
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  For developers
+                </h2>
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  Blog
+                </h2>
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  Partnerships
+                </h2>
+                <h2 id={styles.headercontent} className="mb-2 text-lg">
+                  FAQs
+                </h2>
               </div>
 
               <div className="flex flex-col items-center">
-                <button className="rounded-lg bg-purple-700 px-12 py-4 text-white">
+                <button
+                  id={styles.headercontent}
+                  className="rounded-3xl bg-purple-700 px-12 py-2 text-white"
+                >
                   Get started
                 </button>
               </div>
@@ -549,14 +738,24 @@ const Header = () => {
           >
             <div className="fixed top-16 z-10 mx-12 mb-16 grid w-1/3 grid-cols-1 bg-white  p-8 shadow-2xl">
               <div className="flex flex-col items-center">
-                <button className="mb-4 w-full rounded-lg bg-purple-600 py-2 px-12 text-white">
+                <button
+                  id={styles.headercontent}
+                  className="mb-4 w-full rounded-3xl border-2 border-purple-700 bg-purple-700 py-2 px-12 text-white"
+                >
                   Sign In
                 </button>
-                <h2 className="mb-4">Create Account</h2>
-                <button className="mb-4 w-full rounded-lg bg-purple-600 py-2 px-12 text-white">
+                <h2 id={styles.headercontent} className="mb-4 text-purple-700">
+                  Create Account
+                </h2>
+                <button
+                  id={styles.headercontent}
+                  className="mb-4 w-full rounded-3xl border-2 border-purple-700 bg-transparent py-2 px-12 text-purple-700"
+                >
                   Business sign-In
                 </button>
-                <h2>Business sign-up</h2>
+                <h2 id={styles.headercontent} className="text-purple-700">
+                  Business sign-up
+                </h2>
               </div>
             </div>
           </div>
@@ -615,6 +814,7 @@ const Header = () => {
                 </button>
 
                 <div
+                  id={styles.headercontent}
                   onClick={() => {
                     setWaysToPayCollapse(<div>{waysToPayCollapse}</div>);
                     setEarnCollapse(<div>{earnCollapse}</div>);
@@ -626,6 +826,7 @@ const Header = () => {
                 </div>
 
                 <div
+                  id={styles.headercontent}
                   onClick={() => {
                     setShopCollapse(<div>{shopCollapse}</div>);
                     setEarnCollapse(<div>{earnCollapse}</div>);
@@ -637,6 +838,7 @@ const Header = () => {
                 </div>
 
                 <div
+                  id={styles.headercontent}
                   onClick={() => {
                     setShopCollapse(<div>{shopCollapse}</div>);
                     setWaysToPayCollapse(<div>{waysToPayCollapse}</div>);
@@ -648,6 +850,7 @@ const Header = () => {
                 </div>
 
                 <div
+                  id={styles.headercontent}
                   onClick={() => {
                     setShopCollapse(<div>{shopCollapse}</div>);
                     setWaysToPayCollapse(<div>{waysToPayCollapse}</div>);
@@ -659,6 +862,7 @@ const Header = () => {
                 </div>
 
                 <div
+                  id={styles.headercontent}
                   onClick={() => {
                     setShopCollapse(<div>{shopCollapse}</div>);
                     setWaysToPayCollapse(<div>{waysToPayCollapse}</div>);

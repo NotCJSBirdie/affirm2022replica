@@ -2,76 +2,96 @@
   background-image: url("https://images.ctfassets.net/4rc1asww3mw7/6F3YK2IeRY3CN1jOzD3izg/9224ccd9021863fa61cabd13b598dab9/Accessories.png?w=305&h=367&q=50&fm=webp");
   background-size: cover;
   object-position: center;
+  font-family: "Calibre";
 }
 
 #box2 {
   background-image: url("https://images.ctfassets.net/4rc1asww3mw7/2cSe1KHDLpZmwbFQpKCNr/9c2a98ad5449480306de5980476d35b6/Apparel.png?w=305&h=367&q=50&fm=webp");
   background-size: cover;
   object-position: center;
+  font-family: "Calibre";
 }
 
 #box3 {
   background-image: url("https://images.ctfassets.net/4rc1asww3mw7/3b1tbchUbryRqsKslgYaJz/844cf653718ebb571feb70376199890a/Auto.png?w=305&h=367&q=50&fm=webp");
   background-size: cover;
   object-position: center;
+  font-family: "Calibre";
 }
 
 #box4 {
   background-image: url("https://images.ctfassets.net/4rc1asww3mw7/vV88p9gkYCzA5X9wbQFYR/86d3efd984ba10f7ed396f29dd66118c/Beauty.png?w=305&h=367&q=50&fm=webp");
   background-size: cover;
   object-position: center;
+  font-family: "Calibre";
 }
 
 #box5 {
   background-image: url("https://images.ctfassets.net/4rc1asww3mw7/ZGoiaK3LA7caRwMb9yEoE/db94dda0f7dd750bc3e7117ef4da0af5/Black-owned_Businesses_2x.jpg?w=304&h=366&q=50&fm=webp");
   background-size: cover;
   object-position: center;
+  font-family: "Calibre";
 }
 
 #box6 {
   background-image: url("https://images.ctfassets.net/4rc1asww3mw7/1rNDUUszr1u0FIxbKcbrwP/8b5bec33ff271acbbc29fbeefd673c97/Electronics.png?w=305&h=367&q=50&fm=webp");
   background-size: cover;
   object-position: center;
+  font-family: "Calibre";
 }
 
 #box7 {
   background-image: url("https://images.ctfassets.net/4rc1asww3mw7/5KmtSauHMU7POKn96f8PxS/e36c1e387bad3402f5356aa793029fe8/Fitness___Gear.png?w=305&h=367&q=50&fm=webp");
   background-size: cover;
   object-position: center;
+  font-family: "Calibre";
 }
 
 #box8 {
   background-image: url("https://images.ctfassets.net/4rc1asww3mw7/NQ0KQO9j1gZADIGA0FKyp/842bd146b674962779e3cba75dc77205/Home___furniture.png?w=305&h=367&q=50&fm=webp");
   background-size: cover;
   object-position: center;
+  font-family: "Calibre";
 }
 
 #box9 {
   background-image: url("https://images.ctfassets.net/4rc1asww3mw7/1iuvJRnWA8OnOJOHMrlSEh/f5aba8537b31b9b9d757e80c78b7916b/Luxury.png?w=305&h=367&q=50&fm=webp");
   background-size: cover;
   object-position: center;
+  font-family: "Calibre";
 }
 
 #box10 {
   background-image: url("https://images.ctfassets.net/4rc1asww3mw7/54anJwbKFab0Lm5acvzyBd/05e01ce6b43fe546b6d964b969a17aa5/Shoes.png?w=305&h=367&q=50&fm=webp");
   background-size: cover;
   object-position: center;
+  font-family: "Calibre";
 }
 
 #box11 {
   background-image: url("https://images.ctfassets.net/4rc1asww3mw7/5BHI6p8Q8NH04NNgvY3Whj/4f71564335ac975faea927d2a7309883/Travel.png?w=305&h=367&q=50&fm=webp");
   background-size: cover;
   object-position: center;
+  font-family: "Calibre";
 }
 
 #box11 {
   background-image: url("https://images.ctfassets.net/4rc1asww3mw7/5BHI6p8Q8NH04NNgvY3Whj/4f71564335ac975faea927d2a7309883/Travel.png?w=305&h=367&q=50&fm=webp");
   background-size: cover;
   object-position: center;
+  font-family: "Calibre";
 }
 
 #box12 {
   background-image: url("https://images.ctfassets.net/4rc1asww3mw7/2DC7goIj03YJAlgWzScYLF/b0a5179140ff0cb080e3232035c429cb/Wedding-Category_2x.jpg?w=304&h=366&q=50&fm=webp");
   background-size: cover;
   object-position: center;
+  font-family: "Calibre";
+}
+
+@media (max-width: 768px) {
+  #blackowneddiv {
+    padding-top: 5.8rem /* 80px */;
+    padding-bottom: 5.8rem /* 80px */;
+  }
 }

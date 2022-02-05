@@ -2,3 +2,15 @@
   position: relative;
   bottom: 5rem;
 }
+
+#headertitle {
+  font-family: "Mangueira";
+}
+
+#headersections {
+  font-family: "Mangueira";
+}
+
+#headercontent {
+  font-family: "Calibre";
+}

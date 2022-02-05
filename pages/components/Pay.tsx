@@ -5,7 +5,7 @@ const Pay = () => {
     <div>
       <section id={styles.paysection} className="body-font mx-4 text-black">
         <div className="container mx-auto flex flex-col items-center px-12 py-24 md:flex-row">
-          <div className="mb-16 flex w-full flex-col items-center text-center md:mb-0 md:w-2/3 md:items-start md:text-left">
+          <div className="mb-16 flex w-full flex-col items-start text-left md:mb-0 md:w-2/3">
             <h1 className="title-font mb-4 text-3xl font-medium text-white sm:text-4xl">
               Pay on the go, wherever you go
             </h1>

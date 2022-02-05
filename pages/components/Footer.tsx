@@ -4,14 +4,14 @@ const Footer = () => {
   return (
     <div>
       <footer className="body-font text-black">
-        <div className="mx-16 my-12 flex flex-col items-center border-t-2 border-black py-8 md:flex-row">
+        <div className="my-12 mx-6 flex flex-col items-center border-t-2 border-black py-8 md:mx-16 md:flex-row">
           <div className="flex w-full flex-col items-start md:w-1/2">
             <a className="title-font flex items-center justify-center font-medium text-gray-900 md:justify-start">
-              <span className="text-3xl md:ml-4">AFFIRM</span>
+              <span className="text-3xl">AFFIRM</span>
             </a>
 
-            <p className="m-0 mt-36 flex flex-row md:mx-2">
-              <button className="mr-4 rounded-full bg-blue-400 p-2">
+            <p className="m-0 mt-36 flex flex-row">
+              <button className="mr-4 rounded-full bg-purple-700 p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-brand-instagram"
@@ -31,7 +31,7 @@ const Footer = () => {
                 </svg>
               </button>
 
-              <button className="mr-4 rounded-full bg-blue-400 p-2">
+              <button className="mr-4 rounded-full bg-purple-700 p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-brand-linkedin"
@@ -53,7 +53,7 @@ const Footer = () => {
                 </svg>
               </button>
 
-              <button className="mr-4 rounded-full bg-blue-400 p-2">
+              <button className="mr-4 rounded-full bg-purple-700 p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-brand-twitter"
@@ -71,7 +71,7 @@ const Footer = () => {
                 </svg>
               </button>
 
-              <button className="mr-4 rounded-full bg-blue-400 p-2">
+              <button className="mr-4 rounded-full bg-purple-700 p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-brand-pinterest"
@@ -91,7 +91,7 @@ const Footer = () => {
                 </svg>
               </button>
 
-              <button className="mr-4 rounded-full bg-blue-400 p-2">
+              <button className="mr-4 rounded-full bg-purple-700 p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-brand-facebook"
@@ -197,7 +197,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mx-16">
+        <div className="mx-6 md:mx-16">
           <div className="my-4 flex flex-row">
             Payment options through Affirm are provided by these lending
             partners: affirm.com/lenders. Your rate will be 0–30% APR based on

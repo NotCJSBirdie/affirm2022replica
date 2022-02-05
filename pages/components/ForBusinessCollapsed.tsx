@@ -17,7 +17,7 @@ const ForBusinessCollapsed = () => {
           className="flex w-full flex-row items-center justify-between"
           {...getToggleProps()}
         >
-          <span className="text-xl">For Business</span>
+          <span className="text-xl font-bold">For Business</span>
           <div>
             {arrow ? (
               <svg

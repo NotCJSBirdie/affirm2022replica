@@ -5,7 +5,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import { useEffect } from "react";
 
 const responsive = {
-  0: { items: 2 },
+  0: { items: 1.5 },
   568: { items: 3 },
   1024: { items: 5.5 },
 };
@@ -15,7 +15,7 @@ const items = [
     id={styles.box1}
     className="m-4 flex flex-col items-center rounded-lg bg-blue-400 p-2 text-center transition-all ease-in-out hover:relative hover:scale-110 hover:shadow-xl"
   >
-    <h1 className="text-xl font-bold text-white  ">Accessories</h1>
+    <h1 className="text-xl font-extrabold text-white">Accessories</h1>
     <div className="py-24"></div>
   </div>,
   <div
@@ -46,7 +46,7 @@ const items = [
     <h1 className="pb-2 text-xl font-bold text-white">
       Black-owned businesses
     </h1>
-    <div className="py-20"></div>
+    <div id={styles.blackowneddiv} className="py-20"></div>
   </div>,
   <div
     id={styles.box6}

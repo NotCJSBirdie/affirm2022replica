@@ -4,10 +4,10 @@ const APR = () => {
   return (
     <div className="px-4 py-24 md:px-16">
       <div className="flex flex-row items-center justify-between py-8">
-        <h1 className="mr-4 flex flex-col items-start text-left text-4xl">
+        <h1 className="mr-4 ml-4 flex flex-col items-start text-left text-4xl">
           As low as 0% APR
         </h1>
-        <h1 className="ml-4 flex flex-col items-end text-right text-xl">
+        <h1 className="ml-4 mr-4 flex flex-col items-end text-right text-xl">
           See all featured stores
         </h1>
       </div>

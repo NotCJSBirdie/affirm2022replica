@@ -17,7 +17,7 @@ const SignInCollapsed = () => {
           className="flex w-full flex-row items-center justify-between"
           {...getToggleProps()}
         >
-          <span className="text-xl">Sign In</span>
+          <span className="text-xl font-bold">Sign In</span>
           <div>
             {arrow ? (
               <svg
